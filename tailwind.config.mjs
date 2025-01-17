@@ -10,6 +10,14 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        primary: {
+          '900': '#080073',
+          '700': '#271BC9',
+          '600': '#3029FE',
+        },
+        accent: {
+          '100': '#FFD335'
+        }
       },
     },
   },
