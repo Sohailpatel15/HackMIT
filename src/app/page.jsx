@@ -3,9 +3,7 @@ export default function Home() {
     <section className="">
       <h1 className="text-center text-5xl">  
         Hack MIT-WPU
-      </h1>
-      
-      
+      </h1>     
     </section>
   );
 }

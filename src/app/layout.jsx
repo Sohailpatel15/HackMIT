@@ -1,8 +1,7 @@
-import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/app/components/Navbar/Navbar";
 import Footer from "@/app/components/Footer/Footer";
-import urbanist from "@/app/components/font";
+import {urbanist, lexend} from "@/app/components/font";
 
 export const metadata = {
   title: "HackMitWpu-2025",
