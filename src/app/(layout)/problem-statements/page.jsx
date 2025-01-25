@@ -13,7 +13,7 @@ const Page = () => {
           </TextAnimate>
         </h1>
       </div>
-      <div className=" min-h-screen bg-indigo-800 p-8 rounded-t-3xl">
+      <div className="min-h-screen bg-indigo-800 p-10 rounded-t-3xl">
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3 mx-auto max-w-7xl">
           {cardData.map((card) => (
             <div key={card.id} className="flex justify-center">

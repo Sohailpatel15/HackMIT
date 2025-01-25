@@ -21,13 +21,13 @@ export const Card = ({ title, src, index }) => {
         scale: 1,
         duration: 0.6,
         ease: "back.out(1.7)",
-        delay: index * 0.1, 
+        delay: index * 0.1,
       }
     );
   }, [index]);
   return (
     <div ref={cardRef}>
-      <CardTilt className="w-full max-w-sm transform transition-all duration-300 hover:scale-105">
+      <CardTilt className="w-full max-w-sm transform transition-all duration-300 hover:scale-105 rounded-lg shadow-2xl shadow-black">
         <MagicCard
           className="cursor-pointer flex-col items-center justify-center whitespace-nowrap shadow-2xl p-4"
           gradientColor="#D9D9D955"

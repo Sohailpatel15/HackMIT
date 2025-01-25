@@ -1,4 +1,4 @@
-"use client";;
+"use client";
 import { cn } from "@/lib/utils";
 import { AnimatePresence, motion } from "motion/react";
 
@@ -292,12 +292,11 @@ export function TextAnimate({
   }
 
   return (
-    (<AnimatePresence mode="popLayout">
+    <AnimatePresence mode="popLayout">
       <MotionComponent
         variants={finalVariants.container}
         initial="hidden"
-        whileInView={startOnView ? "show" : undefined}
-        animate={startOnView ? undefined : "show"}
+        animate="show"
         exit="exit"
         className={cn("whitespace-pre-wrap", className)}
         {...props}>
@@ -311,6 +310,6 @@ export function TextAnimate({
           </motion.span>
         ))}
       </MotionComponent>
-    </AnimatePresence>)
+    </AnimatePresence>
   );
 }
