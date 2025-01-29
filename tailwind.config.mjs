@@ -7,25 +7,48 @@ export default {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-  	extend: {
-  		colors: {
-  			background: 'var(--background)',
-  			foreground: 'var(--foreground)',
-  			primary: {
-  				'600': '#3029FE',
-  				'700': '#271BC9',
-  				'900': '#080073'
-  			},
-  			accent: {
-  				'100': '#FFD335'
-  			}
-  		},
-  		borderRadius: {
-  			lg: 'var(--radius)',
-  			md: 'calc(var(--radius) - 2px)',
-  			sm: 'calc(var(--radius) - 4px)'
-  		}
-  	}
+    extend: {
+      colors: {
+        background: "var(--background)",
+        foreground: "var(--foreground)",
+        primary: {
+          '900': '#080073',
+          '700': '#271BC9',
+          '600': '#3029FE',
+        },
+        accent: {
+          '100': '#FAC617',
+          '200': '#FFF0BB'
+        },
+        hack: {
+          100: '#003B7A',
+          300: '#2C61B4',
+          400: '#BAD1E9'
+        }
+      },
+      animation: {
+        spotlight: "spotlight 2s ease .75s 1 forwards",
+      },
+      keyframes: {
+        spotlight: {
+          "0%": {
+            opacity: 0,
+            transform: "translate(-72%, -62%) scale(0.5)",
+          },
+          "100%": {
+            opacity: 1,
+            transform: "translate(-50%,-40%) scale(1)",
+          },
+        },
+      },
+      backgroundSize: {
+        'size-200': '200% 200%',
+    },
+    backgroundPosition: {
+        'pos-0': '0% 0%',
+        'pos-100': '100% 100%',
+    },
+    },
   },
   plugins: [require("tailwindcss-animate")],
 };

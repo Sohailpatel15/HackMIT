@@ -1,15 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-body {
-  /* font-family: Arial, Helvetica, sans-serif; */
-  
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
 }
 
-@layer base {
-  :root {
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: "Urbanist", serif;
+  font-optical-sizing: auto;
+}
 
-    --radius: 0.5rem}
-  
+.playfair-display {
+  font-family: "Playfair Display", serif;
+}
+
+.merriweather {
+  font-family: "Merriweather", serif;
+}
+
+
+.grid-style{
+  transform: rotateX();
+  transform: rotateZ(45deg);
 }
