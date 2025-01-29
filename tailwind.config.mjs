@@ -16,7 +16,13 @@ export default {
           '600': '#3029FE',
         },
         accent: {
-          '100': '#FFD335'
+          '100': '#FAC617',
+          '200': '#FFF0BB'
+        },
+        hack: {
+          100: '#003B7A',
+          300: '#2C61B4',
+          400: '#BAD1E9'
         }
       },
       animation: {

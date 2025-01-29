@@ -1,4 +1,4 @@
-import HeroBg from "@/components/HeroBG";
+import HeroBg from "../components/HeroBG";
 import Image from "next/image";
 
 export default function Home() {
