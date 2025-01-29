@@ -5,7 +5,7 @@ const Footer = () => {
     <footer className="bg-[#fffce1] p-8">
       <div className=" max-w-7xl mx-auto h-fit flex justify-between py-8">
         <div className="w-fit space-y-8">
-          <h1 className="mix-blend-difference text-4xl font-semibold  ">
+          <h1 className="text-4xl font-semibold  ">
             Subscribe to the GSAP® <br /> newsletter to stay up-to-date with{" "}
             <br /> the latest releases
           </h1>
