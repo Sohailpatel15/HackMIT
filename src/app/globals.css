@@ -16,6 +16,7 @@ body {
   background: var(--background);
   font-family: "Urbanist", serif;
   font-optical-sizing: auto;
+  
 }
 
 .playfair-display {

@@ -3,12 +3,12 @@ import React from 'react'
 const HeroBg = ({ children }) => {
     return (
         <div
-            class="absolute antialiased realtive inset-0 h-full w-full bg-primary-900 bg-[radial-gradient(#271BC9_2.5px,transparent_1px)] [background-size:50px_50px]"
+            className="-z-50 absolute antialiased realtive inset-0 h-full w-full bg-primary-900 bg-[radial-gradient(#271BC9_2.5px,transparent_1px)] [background-size:50px_50px]"
         >
             <div className=' absolute w-full flex justify-between'>
                 <div className='grid grid-cols-3 w-[432px] h-72'>
                     <div className='w-36 h-36'></div>
-                    <div className='w-36 h-36 bg-gradient-to-br from-primary-900/70 to-primary-700/80  transition-all duration-500 bg-size-200 bg-pos-0 hover:bg-pos-100  transition-all duration-500 bg-size-200 bg-pos-0 hover:bg-pos-100'></div>
+                    <div className='w-36 h-36 bg-gradient-to-br from-primary-900/70 to-primary-700/80  transition-all duration-500 bg-size-200 bg-pos-0 hover:bg-pos-100  '></div>
                     <div className='w-36 h-36'></div>
                     <div className='w-36 h-36 bg-gradient-to-br from-primary-900/70 to-primary-700/80  transition-all duration-500 bg-size-200 bg-pos-0 hover:bg-pos-100'></div>
                     <div className='w-36 h-36'></div>
@@ -40,7 +40,7 @@ const HeroBg = ({ children }) => {
                 </svg>
 
             </div>
-            <main className='absolute inset-0 w-full h-full z-10'>
+            <main className=' inset-0 w-full h-full z-10'>
             {children}
             </main>
            

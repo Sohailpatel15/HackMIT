@@ -47,7 +47,7 @@ const Navbar = ({ pages }) => {
               } `}
               href={page.url}
             >
-              {page.title}
+              {page.title}  
             </Link>
           </div>
         ))}

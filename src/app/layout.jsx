@@ -1,7 +1,7 @@
 import "./globals.css";
 import Navbar from "@/app/components/Navbar/Navbar";
 import Footer from "@/app/components/Footer/Footer";
-import {urbanist, lexend} from "@/app/components/font";
+import {urbanist, lexend, montserrat, lora} from "@/app/components/font";
 
 import {DockDemo} from "@/app/components/Navbar/Dock";
 
@@ -23,7 +23,7 @@ export default function RootLayout({ children }) {
 
   return (
     <html lang="en">
-      <body className={`antialiased ${urbanist.className} bg-black`}>
+      <body className={`antialiased ${montserrat.className}`}>
         {/* <Navbar pages={pages}/> */}
         
         <DockDemo pageData={pages}/>

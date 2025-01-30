@@ -3,7 +3,7 @@ import { CalendarIcon, HomeIcon, MailIcon, PencilIcon } from "lucide-react";
 import Link from "next/link";
 import React from "react";
 
-import ModeToggle from "@/components/mode-toggle";
+// import ModeToggle from "@/components/mode-toggle";
 import { buttonVariants } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
 import {
@@ -14,7 +14,7 @@ import {
 } from "@/components/ui/tooltip";
 import { cn } from "@/lib/utils";
 import { Dock, DockIcon } from "@/components/ui/dock";
-import { mix } from "motion";
+// import { mix } from "motion";
 
 const Icons = {
   calendar: (props) => <CalendarIcon {...props} />,
@@ -94,30 +94,48 @@ const DATA = {
 export function DockDemo({ pageData }) {
   return (
     <TooltipProvider>
-      <Dock direction="middle" style={{ width: "fit-content", display: 'flex', gap: '2rem', padding: '2rem', color: 'white'}}>
-          {pageData.map((item) => (
-            <DockIcon key={item.title}>
-              <Tooltip>
-                <TooltipTrigger asChild>
-                  <Link
-                    href={item.url}
-                    aria-label={item.title}
-                    className={cn(
-                      buttonVariants({ variant: "ghost", size: "icon" }),
-                      "size-12 rounded-full "
-                    )}
-                  >
-                    {item.title}
-                  </Link>
-                </TooltipTrigger>
-                <TooltipContent>
-                  <p>{item.title == 'Problems' ? 'Problem Statements' : item.title}</p>
-                </TooltipContent>
-              </Tooltip>
-            </DockIcon>
-          ))}
+      <Dock
+        direction="middle"
+        style={{
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          gap: "3rem",
 
-        
+          padding: "2rem",
+          color: "#BAD1E9",
+          backdropBlur: "1rem",
+          position: 'fixed',
+          top: '0',
+          left: '0',
+          right: '0',
+          zIndex: '50',
+
+        }}
+      >
+        {pageData.map((item) => (
+          <DockIcon key={item.title}>
+            <Tooltip>
+              <TooltipTrigger asChild>
+                <Link
+                  href={item.url}
+                  aria-label={item.title}
+                  className={cn(
+                    buttonVariants({ variant: "ghost", size: "icon" }),
+                    "size-16 rounded-full "
+                  )}
+                >
+                  {item.title}
+                </Link>
+              </TooltipTrigger>
+              <TooltipContent>
+                <p>
+                  {item.title == "Problems" ? "Problem Statements" : item.title}
+                </p>
+              </TooltipContent>
+            </Tooltip>
+          </DockIcon>
+        ))}
       </Dock>
     </TooltipProvider>
   );
