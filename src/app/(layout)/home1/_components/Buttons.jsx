@@ -16,7 +16,7 @@ export default Button
 
 export const ButtonWtIcon = ({children, className, icon, iconClassName, iconPosition}) => {
     return (
-        <button className='flex w-fit py-2 px-6 rounded-full items-center transition-all duration-500 bg-hack-100 text-white pointer-events-auto group'>
+        <button className='flex w-fit py-3 px-6 rounded-full items-center transition-all duration-500 bg-hack-100 text-white pointer-events-auto group'>
             {
                 iconPosition === 'left' && <span className={clsx(' w-0 overflow-hidden bg-hack-100  text-white rounded-md  group-hover:w-6 group-hover:mr-2 transition-all duration-500', iconClassName)}>{icon}</span>
             }
