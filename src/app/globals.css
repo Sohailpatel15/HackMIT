@@ -31,12 +31,3 @@ body {
   transform: rotateX();
   transform: rotateZ(45deg);
 }
-
-@layer base {
-  * {
-    @apply border-border;
-  }
-  body {
-    @apply bg-background text-foreground;
-  }
-}
