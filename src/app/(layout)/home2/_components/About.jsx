@@ -4,10 +4,13 @@ import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/all";
 
 import { AnimatedTitle } from "./AnimatedTitle";
+import { FontStyle, Title } from "./CustomText";
 
 gsap.registerPlugin(ScrollTrigger);
 
+
 const About = () => {
+
   useGSAP(() => {
     const clipAnimation = gsap.timeline({
       scrollTrigger: {
@@ -35,10 +38,11 @@ const About = () => {
         </p>
 
         <AnimatedTitle
-          title="Discover the world's <br /> largest shared adventure"
-          containerClass="mt-5 !text-black text-center text-hack-100"
-          wordClass={"text-hack-100"}
-        />
+            title="Discover the world's <br /> largest shared adventure"
+            containerClass="mt-5 !text-black text-center text-hack-100"
+            wordClass="text-hack-100"
+          />
+
 
         <div className="about-subtext">
           <p>The Game of Games begins—your life, now an epic MMORPG</p>
