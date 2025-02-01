@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Silkscreen:wght@400;700&display=swap');
 
 @import url("https://fonts.cdnfonts.com/css/general-sans");
 
@@ -16,7 +17,7 @@
 body {
   width: 100dvw;
   overflow-x: hidden;
-  background-color: #dfdff0;
+  background-color: #e9f4ff;
   font-family: "General Sans", sans-serif;
 }
 
@@ -56,7 +57,8 @@ body {
 
   @font-face {
     font-family: "zentry";
-    src: url("/fonts/zentry-regular.woff2") format("woff2");
+    src: url("/fonts/Silkscreen-Bold.ttf");
+    
   }
 }
 
@@ -91,7 +93,7 @@ body {
   }
 
   .hero-heading {
-    @apply uppercase font-zentry font-black text-5xl sm:right-10 sm:text-7xl md:text-9xl lg:text-[12rem];
+    @apply uppercase font-zentry tracking-[-0.08em] font-black text-5xl sm:right-10 sm:text-7xl md:text-9xl lg:text-[12rem];
   }
 
   .about-subtext {
@@ -107,7 +109,7 @@ body {
   }
 
   .animated-word {
-    @apply special-font font-zentry font-black opacity-0;
+    @apply special-font tracking-normal font-black opacity-0;
     transform: translate3d(10px, 51px, -60px) rotateY(60deg) rotateX(-40deg);
     transform-origin: 50% 50% -150px !important;
     will-change: opacity, transform;

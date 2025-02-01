@@ -45,6 +45,7 @@ export default {
           100: "#003B7A",
           300: "#2C61B4",
           400: "#BAD1E9",
+          500: "#e9f4ff",
         },
       },
       animation: {

@@ -2,7 +2,7 @@
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
 
-export const AnimatedTitle = ({ title, containerClass }) => {
+export const AnimatedTitle = ({ title, containerClass, wordClass }) => {
   const containerRef = useRef(null);
 
   useEffect(() => {
@@ -40,7 +40,7 @@ export const AnimatedTitle = ({ title, containerClass }) => {
           {line.split(" ").map((word, i) => (
             <span
               key={i}
-              className="animated-word"
+              className={`animated-word ${wordClass} `}
               dangerouslySetInnerHTML={{ __html: word }}
             />
           ))}
