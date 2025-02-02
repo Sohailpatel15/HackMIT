@@ -95,14 +95,14 @@ const Hero = () => {
         <SplineView/>
         
 
-        <h1 className="special-font hero-heading absolute bottom-5 right-5 z-40 text-hack-300 pointer-events-auto">
+        {/* <h1 className="special-font hero-heading absolute bottom-5 right-5 z-40 text-hack-300 pointer-events-auto">
           MIT'25
-        </h1>
+        </h1> */}
         <div className="absolute w-fit left-0 top-0 z-30 ">
           <div className="mt-24 px-5 sm:px-10">
-            <h1 className="special-font hero-heading text-hack-100 -ml-6">
+            {/* <h1 className="special-font hero-heading text-hack-100 -ml-6">
               HACK
-            </h1>
+            </h1> */}
             <p className="mb-5 max-w-64 font-robert-regular text-hack-100">
               Enter the Metagame Layer <br /> Unleash the Play Economy
             </p>
