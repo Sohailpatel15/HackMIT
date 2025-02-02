@@ -44,7 +44,7 @@ export const BentoGridItem = ({
       rotation: 0,
       y: 0,
       duration: 0.5,
-      delay:  0.3, // Stagger the animations
+      delay: 0.3, // Stagger the animations
       ease: "elastic.out(1, 0.7)",
       onComplete: () => {
         // Add a subtle hover animation
