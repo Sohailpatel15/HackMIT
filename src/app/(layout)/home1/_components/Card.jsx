@@ -50,14 +50,14 @@ const Card = ({ imgUri, title, subtitle, rotation, variant, index }) => {
         />
         <div
           className={clsx(
-            "flex flex-col p-6 rounded-b-3xl group-hover: absolute bottom-0 ",
+            "flex flex-col p-6 rounded-b-3xl group-hover: absolute bottom-0 w-full",
             variantClass
           )}
         >
           <h3 className="font-semibold text-2xl mb-2 group-hover:text-[26px] group-hover:my-4 transition-all duration-500">
             {title || "Title goes here"}
           </h3>
-          <p className="font-medium text-sm">
+          <p className="font-medium text-sm ">
             {subtitle ||
               "Lorem ipsum, dolor sit amet consectetur adipisicing eli ipsum, dolor sit amet consectetur adipisicing elit."}
           </p>
