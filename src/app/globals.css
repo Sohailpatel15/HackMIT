@@ -294,3 +294,8 @@ body {
     opacity: 0.8;
   }
 }
+
+.floating-nav {
+  background-color: black !important; /* Ensures it remains yellow */
+}
+
