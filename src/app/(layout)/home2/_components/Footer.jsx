@@ -12,7 +12,7 @@ const Footer = () => {
     <footer className="w-screen bg-hack-100 py-16 text-hack-500">
       <div className="container mx-auto flex flex-col items-center justify-between gap-4 px-4 md:flex-row">
         <p className="text-center text-sm font-light md:text-left">
-          ©Nova 2024. All rights reserved
+          ©HACK MIT-WPU 2024. All rights reserved
         </p>
 
         <div className="flex justify-center gap-4  md:justify-start">
