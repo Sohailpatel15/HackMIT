@@ -49,11 +49,11 @@ const Story = () => {
     <section id="story" className="min-h-dvh w-screen bg-black text-blue-50">
       <div className="flex size-full flex-col items-center py-10 pb-24">
         <p className="font-general text-sm uppercase md:text-[10px]">
-          The Multiversal IP World
+          The Multiversal of Hack
         </p>
         <div className="relative size-full">
           <AnimatedTitle
-            title="The St<b>o</b>ry of <br /> a Hidden Realm"
+            title="The Story"
             sectionId="#story"
             containerClass="mt-5 pointer-events-none mix-blend-difference relative z-10"
           />
@@ -66,7 +66,7 @@ const Story = () => {
                   onMouseUp={handleMouseLeave}
                   onMouseEnter={handleMouseLeave}
                   onMouseMove={handleMouseMove}
-                  src="/img/entrance.webp"
+                  src="/img/hackImage-3.JPG"
                   alt="entrance"
                   className="object-contain"
                 />
@@ -80,12 +80,11 @@ const Story = () => {
         <div className="-mt-80 flex w-full justify-center md:-mt-64 md:me-44 md:justify-end">
           <div className="flex h-full w-fit flex-col items-center md:items-start">
             <p className="mt-3 max-w-sm text-center font-circular-web text-violet-50 md:text-start">
-              Where Realms converge, lies Zentry and the boundless pillar.
-              Discover its secret and shape your fate amidst infinite
-              opportunities.
+            Where innovation meets passion—HACKMIT-WPU is the launchpad for the
+            next big idea.
               <Button
                 id="realm-button"
-                title="discover prolouge"
+                title="ABOUT HACK MIT-WPU"
                 containerClass="mt-5"
               />
             </p>

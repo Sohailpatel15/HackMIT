@@ -2,6 +2,7 @@
 
 import { useRef, useState } from "react";
 import { TiLocationArrow } from "react-icons/ti";
+import { BackgroundBeams } from "@/components/ui/background-beams";
 
 const BentoTilt = ({ children, className = "" }) => {
   const [transformStyle, settransformStyle] = useState("");
@@ -64,68 +65,66 @@ const BentoCard = ({ src, title, description }) => {
 
 const Features = () => {
   return (
-    <section className="bg-hack-100 pb-52">
-      <div className="container mx-auto px-3 md:px-10">
+    <section className="bg-hack-400 pb-52">
+      <div className="container mx-auto px-3 md:px-10 ">
         <div className="px-5 py-32">
-          <p className="font-circular-web text-lg text-hack-50 text-hack-500">
-            Into the Metagame Layer
+          <p className="font-circular-web text-lg text-hack-50 text-hack-100">
+            The Ultimate Hackathon Experience
           </p>
-          <p className="max-w-md font-circular-web text-lg text-hack-50 opacity-50 text-hack-500">
-            Immerse Yourself in a rich and ever - expanding universe, where a
-            vibrant area of products converts into an interconnected overlay
-            experience on your world.
+          <p className="max-w-md font-circular-web text-lg text-hack-50 opacity-50 text-black">
+            Dive into HACKMIT-WPU, where creativity meets technology. Build, innovate, and push the boundaries of problem-solving.
           </p>
         </div>
         <BentoTilt className="border-hsla relative mb-7 h-96 w-full overflow-hidden rounded-md md:h-[65vh]">
           <BentoCard
-            src="videos/feature-1.mp4"
+            src="videos/hackVideo1.mp4"
             title={
               <>
-                radi<b>n</b>t
+                Inn<b>o</b>vate
               </>
             }
-            description="A cross-platform meta-game app, turning your activities across web2 and web3 games into a rewarding adventure experience."
+            description="Transform your ideas into reality at HACKMIT-WPU, where developers, designers, and visionaries collaborate to create groundbreaking projects."
           />
         </BentoTilt>
         <div className="grid h-[135vh] grid-cols-2 grid-rows-3 gap-7">
           <BentoTilt className="bento-tilt_1 row-span-1 md:col-span-1 md:row-span-2">
             <BentoCard
-              src="videos/feature-2.mp4"
+              src="videos/hackVideo2.mp4"
               title={
                 <>
-                  zig<b>m</b>a
+                  Coll<b>a</b>borate
                 </>
               }
-              description="Create and manage your guilds, and engage in a variety of activities with your friends and community."
+              description="Team up with like-minded individuals, brainstorm solutions, and build something extraordinary in just 36 hours."
             />
           </BentoTilt>
           <BentoTilt className="bento-tilt_1 row-span-1 ms-32 md:col-span-1 md:ms-0">
             <BentoCard
-              src="videos/feature-3.mp4"
+              src="videos/hackVideo3.mov"
               title={
                 <>
-                  n<b>e</b>xus
+                  Cod<b>e</b>
                 </>
               }
-              description="A decentralized marketplace for digital assets, where you can buy, sell, and trade NFTs and other digital goods."
+              description="Write, debug, and deploy your ideas with the latest tools and technologies, competing for the top spot at HACKMIT-WPU."
             />
           </BentoTilt>
           <BentoTilt className="bento-tilt_1 me-14 md:col-span-1 md:me-0">
             <BentoCard
-              src="videos/feature-4.mp4"
+              src="videos/hackVideo4.mp4"
               title={
                 <>
-                  az<b>u</b>l
+                  S<b>h</b>owcase
                 </>
               }
-              description="A decentralized social platform, where you can connect with other players, share your achievements, and discover new games."
+              description="Present your project to industry experts and gain recognition for your innovative solutions at the grand finale."
             />
           </BentoTilt>
 
           <div className="bento-tilt_2">
             <div className="flex size-full flex-col justify-between bg-hack-500 p-5">
               <h1 className="bento-title special-font max-w-64 text-black">
-                M<b>o</b>re Co<b>m</b>ing Soon!
+                M<b>o</b>re Surprises Await!
               </h1>
 
               <TiLocationArrow className="m-5 scale-[5] self-end" />
@@ -134,7 +133,7 @@ const Features = () => {
 
           <div className="bento-tilt_2">
             <video
-              src="videos/feature-5.mp4"
+              src="videos/hackVideo5.mp4"
               loop
               muted
               autoPlay
@@ -142,6 +141,10 @@ const Features = () => {
             />
           </div>
         </div>
+      </div>
+      <div className="absolute inset-0 z-0">
+        <BackgroundBeams />
+        
       </div>
     </section>
   );

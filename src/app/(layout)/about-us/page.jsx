@@ -1,9 +1,30 @@
-import React from 'react'
+"use client"
+import React from 'react';
+import { motion } from 'framer-motion';
 
-const page = () => {
+import Hero from './_components/Hero';
+import AnimatedCard from './_components/SeedThought';
+import Sponsors from './_components/Sponsors';
+import {GridPatternHero, GridPatternLinearGradient}  from './_components/GridPattern';
+import { AboutUsCarouselDemo } from './_components/Carousel'
+
+
+const Page = () => {
   return (
-    <div>page</div>
-  )
-}
+    <div className="relative"> 
+  <div className=" h-full relative">
+    <div className="flex flex-col items-center z-20 relative">
+      <AboutUsCarouselDemo />
+      <div className="-mt-16 w-full flex flex-col items-center">
+        <AnimatedCard />
+        <Sponsors />
+      </div>
+    </div>
+  </div>
+</div>
 
-export default page
+  
+  );
+};
+
+export default Page;
