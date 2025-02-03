@@ -2,6 +2,7 @@
 
 import { useRef, useState } from "react";
 import { TiLocationArrow } from "react-icons/ti";
+import { BackgroundBeams } from "@/components/ui/background-beams";
 
 const BentoTilt = ({ children, className = "" }) => {
   const [transformStyle, settransformStyle] = useState("");
@@ -65,7 +66,7 @@ const BentoCard = ({ src, title, description }) => {
 const Features = () => {
   return (
     <section className="bg-hack-400 pb-52">
-      <div className="container mx-auto px-3 md:px-10">
+      <div className="container mx-auto px-3 md:px-10 ">
         <div className="px-5 py-32">
           <p className="font-circular-web text-lg text-hack-50 text-hack-100">
             The Ultimate Hackathon Experience
@@ -140,6 +141,10 @@ const Features = () => {
             />
           </div>
         </div>
+      </div>
+      <div className="absolute inset-0 z-0">
+        <BackgroundBeams />
+        
       </div>
     </section>
   );
