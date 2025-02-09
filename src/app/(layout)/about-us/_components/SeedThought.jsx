@@ -7,7 +7,7 @@ const AnimatedCard = () => {
     <div className="min-h-screen w-full flex items-center justify-center p-4">
       <div
         className={`w-full md:w-[700px] max-w-3xl rounded-xl md:rounded-2xl shadow-xl md:shadow-2xl transform transition-all duration-700 ease-out
-          ${isHovered ? 'md:scale-105 md:shadow-3xl md:rotate-1' : 'rotate-0'}`}
+          ${isHovered ? 'md:scale-105 md:shadow-3xl md:rotate-1' : 'rotate-0'} bg-white`}
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
       >

@@ -83,7 +83,7 @@ const Sponsors = () => {
                 scale: 1.05,
                 boxShadow: "0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)",
               }}
-              className="relative overflow-hidden rounded-xl bg-white"
+              className="relative overflow-hidden rounded-xl bg-white border"
             >
               <motion.div 
                 className="absolute top-0 left-0 w-full h-1"

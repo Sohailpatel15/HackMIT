@@ -5,6 +5,7 @@ import { ScrollTrigger } from "gsap/all";
 
 import { AnimatedTitle } from "./AnimatedTitle";
 import { FontStyle, Title } from "./CustomText";
+import { VantaBackground } from '../../background/_components/VantaBackground';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -30,7 +31,14 @@ const About = () => {
     });
   });
 
+
   return (
+  <VantaBackground
+          color={0xbecbff}           // Globe color
+          color2={0xbecbff}          // Secondary globe color
+          size={1.10}                // Globe size scaling
+          backgroundColor={0xffffff} // Background color
+    >
     <div id="about" className="min-h-screen w-screen">
       <div className="relative mb-8 mt-36 flex flex-col items-center gap-5">
         <AnimatedTitle
@@ -58,6 +66,7 @@ const About = () => {
         </div>
       </div>
     </div>
+    </VantaBackground>
   );
 };
 

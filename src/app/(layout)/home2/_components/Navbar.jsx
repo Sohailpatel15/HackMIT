@@ -80,7 +80,7 @@ const Navbar = () => {
               <a
                 key={index}
                 href={`#${item.toLowerCase()}`}
-                className="nav-hover-btn text-blue-900 hover:text-hack-400"
+                className="nav-hover-btn text-blue-900 hover:text-accent-100"
               >
                 {item}
               </a>

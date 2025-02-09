@@ -6,6 +6,8 @@ import Hero from "./_components/Hero";
 import Navbar from "./_components/Navbar";
 import Story from "./_components/Story";
 
+
+
 const App = () => {
   return (
     <main className="relative min-h-screen w-screen overflow-x-hidden">
