@@ -26,40 +26,38 @@ const Card = ({ imgUri, title, subtitle, rotation, variant, index }) => {
       }
     );
   }, [index]);
-  const variantClass =
-    variant === "primary"
-      ? "bg-hack-100 text-white"
-      : variant === "secondary"
-      ? "bg-accent-100 text-hack-100"
-      : variant === "soft"
-      ? "bg-hack-400 text-hack-100"
-      : "bg-gray-200 text-hack-100";
+
+  const variantClass = clsx(
+    "flex flex-col p-6 rounded-b-3xl group-hover: absolute bottom-0 w-full",
+    {
+      "bg-hack-100 text-white": variant === "primary",
+      "bg-accent-100 text-hack-100": variant === "secondary",
+      "bg-hack-400 text-hack-100": variant === "soft",
+      "bg-gray-200 text-hack-100": !variant,
+    }
+  );
+
   return (
     <CardTilt className="w-full max-w-sm transform transition-all duration-300 hover:scale-105 rounded-3xl cursor-pointer">
       <div
         ref={cardRef}
-        className={`rounded-3xl relative h-fit aspect-[5/6] overflow-hidden rotate-${rotation} group `}
+        className={`rounded-3xl relative h-fit aspect-[5/6] overflow-hidden rotate-${rotation} group border-2 border-transparent hover:border-yellow-400 transition-all duration-300`}
       >
         <img
-          className=" object-cover w-full"
+          className="object-cover w-full"
           src={
             imgUri ||
             "https://images.pexels.com/photos/1051075/pexels-photo-1051075.jpeg"
           }
           alt=""
         />
-        <div
-          className={clsx(
-            "flex flex-col p-6 rounded-b-3xl group-hover: absolute bottom-0 w-full",
-            variantClass
-          )}
-        >
+        <div className={variantClass}>
           <h3 className="font-semibold text-2xl mb-2 group-hover:text-[26px] group-hover:my-4 transition-all duration-500">
             {title || "Title goes here"}
           </h3>
-          <p className="font-medium text-sm ">
+          <p className="font-medium text-sm">
             {subtitle ||
-              "Lorem ipsum, dolor sit amet consectetur adipisicing eli ipsum, dolor sit amet consectetur adipisicing elit."}
+              "Lorem ipsum, dolor sit amet consectetur adipisicing elit."}
           </p>
         </div>
       </div>
@@ -76,12 +74,12 @@ export const HorizontalCard = ({
 }) => {
   return (
     <div
-      className={` relative rounded-3xl aspect-[16/10] h-fit overflow-hidden bg-hack-100 rotate-${rotation} ${
-        isGradient && "bg-gradient-to-r from-hack-100 to-hack-300 group "
-      } `}
+      className={`relative rounded-3xl aspect-[16/10] h-fit overflow-hidden bg-hack-100 rotate-${rotation} 
+      ${isGradient ? "bg-gradient-to-r from-hack-100 to-hack-300 group" : ""}
+      border-2 border-transparent hover:border-yellow-400 transition-all duration-300`}
     >
       <img
-        className="rounded-full aspect-square object-cover w-28 h-28 absolute top-4 right-4 group-hover:w-28 group-hover:h-32 transition-all :"
+        className="rounded-full aspect-square object-cover w-28 h-28 absolute top-4 right-4 group-hover:w-28 group-hover:h-32 transition-all"
         src={
           imgUri ||
           "https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
@@ -104,4 +102,5 @@ export const HorizontalCard = ({
     </div>
   );
 };
+
 export default Card;

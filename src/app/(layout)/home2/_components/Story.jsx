@@ -1,94 +1,49 @@
 "use client";
 
-import { useRef } from "react";
 import { AnimatedTitle } from "./AnimatedTitle";
-import gsap from "gsap";
-import RoundedCorners from "./RoundedCorners";
 import Button from "./Button";
+import { useRouter } from "next/navigation";
+
+
 
 const Story = () => {
-  const frameRef = useRef(null);
-
-  const handleMouseLeave = () => {
-    const element = frameRef.current;
-
-    gsap.to(element, {
-      duration: 0.3,
-      rotateX: 0,
-      rotateY: 0,
-      ease: "power1.inOut",
-    });
-  };
-
-  const handleMouseMove = (e) => {
-    const { clientX, clientY } = e;
-    const element = frameRef.current;
-
-    if (!element) return;
-
-    const rect = element.getBoundingClientRect();
-    const x = clientX - rect.left;
-    const y = clientY - rect.top;
-
-    const centerX = rect.width / 2;
-    const centerY = rect.height / 2;
-
-    const rotateX = ((y - centerY) / centerY) * -10;
-    const rotateY = ((x - centerX) / centerX) * 10;
-
-    gsap.to(element, {
-      duration: 0.3,
-      rotateX,
-      rotateY,
-      transformPerspective: 500,
-      ease: "power1.inOut",
-    });
-  };
-
+  const router = useRouter();
   return (
-    <section id="story" className="min-h-dvh w-screen bg-black text-blue-50">
-      <div className="flex size-full flex-col items-center py-10 pb-24">
-        <p className="font-general text-sm uppercase md:text-[10px]">
-          The Multiversal of Hack
-        </p>
-        <div className="relative size-full">
-          <AnimatedTitle
-            title="The Story"
-            sectionId="#story"
-            containerClass="mt-5 pointer-events-none mix-blend-difference relative z-10"
-          />
-          <div className="story-img-container">
-            <div className="story-img-mask">
-              <div className="story-img-content">
-                <img
-                  ref={frameRef}
-                  onMouseLeave={handleMouseLeave}
-                  onMouseUp={handleMouseLeave}
-                  onMouseEnter={handleMouseLeave}
-                  onMouseMove={handleMouseMove}
-                  src="/img/hackImage-3.JPG"
-                  alt="entrance"
-                  className="object-contain"
-                />
-              </div>
-            </div>
+    <section id="story" className="min-h-screen w-full bg-hack-300 text-blue-50">
+      <div className="flex min-h-screen flex-col lg:flex-row">
+        {/* Left Content Section */}
+        <div className="flex w-full lg:w-1/2 flex-col justify-center px-8 lg:px-16 py-10">
+          <p className="font-general text-sm uppercase tracking-wider md:text-[10px] mb-4">
+            The Multiversal of Hack
+          </p>
+          
+          <div className="mb-8">
+            <h1 className="text-6xl font-bold tracking-tight whitespace-nowrap text-hack-400">
+              Our Story
+            </h1>
+          </div>
 
-            <RoundedCorners />
+          <div className="max-w-xl">
+            <p className="font-circular-web text-lg text-violet-50">
+              Where innovation meets passion—HACKMIT-WPU is the launchpad for the
+              next big idea.
+            </p>
+            <Button
+              id="realm-button"
+              title="ABOUT HACK MIT-WPU"
+              containerClass="mt-8"
+              href="/about-us"
+            />
           </div>
         </div>
 
-        <div className="-mt-80 flex w-full justify-center md:-mt-64 md:me-44 md:justify-end">
-          <div className="flex h-full w-fit flex-col items-center md:items-start">
-            <p className="mt-3 max-w-sm text-center font-circular-web text-violet-50 md:text-start">
-            Where innovation meets passion—HACKMIT-WPU is the launchpad for the
-            next big idea.
-              <Button
-                id="realm-button"
-                title="ABOUT HACK MIT-WPU"
-                containerClass="mt-5"
-              />
-            </p>
-          </div>
+        {/* Right Image Section */}
+        <div className="w-full lg:w-1/2 relative">
+          <img
+            src="/img/hackImage-3.JPG"
+            alt="entrance"
+            className="h-full w-full object-cover rounded-3xl"
+          />
         </div>
       </div>
     </section>
