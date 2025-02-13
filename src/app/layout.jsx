@@ -32,7 +32,9 @@ export default function RootLayout({ children }) {
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
        <Navbar pages={pages}/>
-        {children}
+       <div className="mt-12 relative">
+           {children}
+       </div>
       </body>
     </html>
   );

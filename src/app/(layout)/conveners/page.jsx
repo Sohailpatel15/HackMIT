@@ -63,7 +63,7 @@ const facultyData = [
 
 const Page = () => {
   return (
-    <section className="relative flex w-full justify-center rounded-lg border bg-background md:shadow-xl">
+    <section className="relative flex w-full justify-center rounded-lg bg-background md:shadow-xl">
       <div className="z-50 p-4 container mx-auto">
         {/* Founders & Presidents */}
         <TextAnimate
