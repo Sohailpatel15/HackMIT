@@ -20,7 +20,7 @@ const Page = () => {
               <TextAnimate
                 animation="blurInUp"
                 by="character"
-                className="special-font hero-heading !text-7xl text-hack-100"
+                className="hero-heading !text-7xl text-hack-100"
               >
                 Problem Statements
               </TextAnimate>

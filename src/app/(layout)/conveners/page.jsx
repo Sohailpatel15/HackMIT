@@ -3,7 +3,6 @@ import Card from "../home1/_components/Card"
 import { cn } from "@/lib/utils"
 import { DotPattern } from "./_components/DotPattern"
 import { TextAnimate } from "./_components/TextAnimate"
-import { HorizontalCard } from "./_components/HorizontalCard"
 
 const coConvenersData = [
   {
@@ -65,7 +64,7 @@ const Page = () => {
   return (
     <section className="relative flex w-full justify-center rounded-lg bg-background md:shadow-xl">
       <div className="z-50 p-4 container mx-auto">
-        {/* Founders & Presidents */}
+        {/* Top Leader */}
         <TextAnimate
           animation="blurInUp"
           by="character"
@@ -74,41 +73,33 @@ const Page = () => {
         >
           Founder & President
         </TextAnimate>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
-          <HorizontalCard 
-            imgUri="/img/image.png?height=200&width=200" 
-            title="Dr Vishwanath karad" 
-            subtitle="Founder" 
-            index={1} 
-          />
-          <HorizontalCard 
-            imgUri="/img/image.png?height=200&width=200" 
-            title="Rahul Karad" 
-            subtitle="President" 
-            index={1} 
-          />
+        <div className="flex justify-center mb-16">
+          <div className="w-full max-w-md">
+            <Card
+              imgUri="/img/image.png?height=300&width=300"
+              title="Dr Vishwanath karad"
+              subtitle="Founder & President"
+            />
+          </div>
         </div>
 
         {/* Conveners */}
         <TextAnimate animation="blurInUp" by="character" className="text-center text-5xl font-semibold py-8">
           Conveners
         </TextAnimate>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 mb-16">
-          <Card
-            imgUri={"/img/milind-pande.jpg"}
-            title="Prof. Dr. Milind Pande"
-            subtitle="Pro-Vice Chancellor at MIT-WPU"
-          />
-          <Card
-            imgUri={"/img/ravi-kumar.jpeg"}
-            title="Prof. Dr. Ravi Kumar Chitnis"
-            subtitle="Vice Chancellor at MIT World Peace University"
-          />
-          <Card
-            imgUri={"/img/sanjay-kamtekar.webp"}
-            title="Dr. Sanjay Kamtekar"
-            subtitle="Chief Academic Officer at MIT World Peace University"
-          />
+        <div className="flex justify-center w-full mb-16">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 w-full max-w-4xl">
+            <Card
+              imgUri={"/img/ravi-kumar.jpeg"}
+              title="Prof. Dr. Ravi Kumar Chitnis"
+              subtitle="Vice Chancellor at MIT World Peace University"
+            />
+            <Card
+              imgUri={"/img/sanjay-kamtekar.webp"}
+              title="Dr. Sanjay Kamtekar"
+              subtitle="Chief Academic Officer at MIT World Peace University"
+            />
+          </div>
         </div>
 
         {/* Co-Conveners */}

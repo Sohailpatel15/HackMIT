@@ -51,9 +51,9 @@ const BentoCard = ({ src, title, description }) => {
         autoPlay
         className="absolute left-0 top-0 size-full object-cover object-center"
       />
-      <div className="relative z-10 flex size-full flex-col justify-between p-5 text-hack-300">
+      <div className="relative z-10 flex size-full flex-col justify-between p-5 text-accent-100">
         <div>
-          <h1 className="bento-title special-font">{title}</h1>
+          <h1 className="bento-title ">{title}</h1>
           {description && (
             <p className=" mt-3 max-w-64 text-xs md:text-base">{description}</p>
           )}
@@ -123,7 +123,7 @@ const Features = () => {
 
           <div className="bento-tilt_2">
             <div className="flex size-full flex-col justify-between bg-hack-500 p-5">
-              <h1 className="bento-title special-font max-w-64 text-black">
+              <h1 className="bento-title max-w-64 text-hack-100">
                 M<b>o</b>re Surprises Await!
               </h1>
 
