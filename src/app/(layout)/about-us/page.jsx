@@ -33,13 +33,13 @@ const Page = () => {
               </TextAnimate>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
                 <HorizontalCard 
-                  imgUri="/img/image.png?height=200&width=200" 
+                  imgUri="/img/vishwanath-karad.jpg" 
                   title="Dr Vishwanath karad" 
                   subtitle="Founder" 
                   index={1} 
                 />
                 <HorizontalCard 
-                  imgUri="/img/image.png?height=200&width=200" 
+                  imgUri="/img/rahul-karad.jpeg" 
                   title="Rahul Karad" 
                   subtitle="President" 
                   index={1} 

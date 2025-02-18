@@ -15,12 +15,12 @@ const Page = () => {
     >
       <div className="relative w-full min-h-screen">
         <section className="relative z-10 flex flex-col items-center justify-center min-h-screen px-4">
-          <div className="w-full flex items-center justify-center p-20">
+          <div className="w-full flex items-center justify-center p-24">
             <h1 className="text-balance text-5xl font-semibold leading-none tracking-tighter sm:text-2xl md:text-4xl lg:text-7xl capitalize text-white">
               <TextAnimate
                 animation="blurInUp"
                 by="character"
-                className="hero-heading !text-7xl text-hack-100"
+                className="font-circular-web !text-7xl text-hack-100"
               >
                 Problem Statements
               </TextAnimate>
