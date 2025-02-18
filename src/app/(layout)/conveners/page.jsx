@@ -119,25 +119,6 @@ const Page = () => {
     >
       <section className="relative flex w-full justify-center rounded-lg bg-transparent md:shadow-xl">
         <div className="z-50 p-4 container mx-auto">
-          {/* Founder & President */}
-          <TextAnimate
-            animation="blurInUp"
-            by="character"
-            className="text-center text-5xl font-semibold py-8"
-            duration={5}
-          >
-            Founder & President
-          </TextAnimate>
-          <div className="flex justify-center mb-16">
-            <div className="w-full max-w-sm">
-              <Card
-                imgUri="/img/vishwanath-karad.jpg"
-                title="Dr Vishwanath karad"
-                subtitle="Founder & President"
-              />
-            </div>
-          </div>
-
           {/* Conveners */}
           <TextAnimate
             animation="blurInUp"
