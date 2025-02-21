@@ -53,37 +53,37 @@ const data = [
       category: "Innovation",
       title: "Empowering the next generation of innovators.",
       src: "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=3556&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      content: <DummyContent />,
+
     },
     {
       category: "Hackathons",
       title: "Building a culture of creativity and problem-solving.",
       src: "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?q=80&w=3387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      content: <DummyContent />,
+
     },
-    {
-      category: "Community",
-      title: "A thriving network of tech enthusiasts and creators.",
-      src: "https://images.unsplash.com/photo-1551836022-d5d88e9218df?q=80&w=2333&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      content: <DummyContent />,
-    },
+    // {
+    //   category: "Community",
+    //   title: "A thriving network of tech enthusiasts and creators.",
+    //   src: "https://images.unsplash.com/photo-1551836022-d5d88e9218df?q=80&w=2333&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    //   content: <DummyContent />,
+    // },
     {
       category: "Workshops",
       title: "Hands-on learning experiences from industry experts.",
       src: "https://images.unsplash.com/photo-1599507593499-a3f7d7d97667?q=80&w=2515&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      content: <DummyContent />,
+
     },
-    {
-      category: "Sponsorships",
-      title: "Connecting companies with the brightest minds in tech.",
-      src: "https://images.unsplash.com/photo-1537432376769-00a4441dc963?q=80&w=2793&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      content: <DummyContent />,
-    },
+    // {
+    //   category: "Sponsorships",
+    //   title: "Connecting companies with the brightest minds in tech.",
+    //   src: "https://images.unsplash.com/photo-1537432376769-00a4441dc963?q=80&w=2793&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    //   content: <DummyContent />,
+    // },
     {
       category: "Opportunities",
       title: "Join us to gain experience, network, and grow.",
       src: "https://images.unsplash.com/photo-1513258496099-48168024aec0?q=80&w=2048&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      content: <DummyContent />,
+
     },
   ];
   

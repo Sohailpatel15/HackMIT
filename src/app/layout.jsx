@@ -23,7 +23,7 @@ export default function RootLayout({ children }) {
   const pages = [
     {title: 'Home', url: '/'},
     {title: 'Conveners', url: '/conveners'},
-    {title: 'Problems', url: '/problem-statements'},
+    {title: 'Tracks', url: '/tracks'},
     {title: 'About Us', url: '/about-us'},
   ]
   return (
