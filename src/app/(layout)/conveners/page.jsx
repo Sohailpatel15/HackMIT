@@ -8,7 +8,7 @@ import { VantaBackground } from "../background/_components/VantaBackground";
 const ConvenersData = [
   {
     imgUri: "/img/conveners/ravi-kumar-chitnis.jpg",
-    title: "Dr. Ravi Kumar Chitnis",
+    title: "Dr. RM Chitnis",
     subtitle: "Vice Chancellor at MIT World Peace University",
   },
   {
@@ -17,15 +17,37 @@ const ConvenersData = [
     subtitle: "Pro Vice Chancellor at MIT World Peace University",
   },
   {
+    imgUri: "/img/conveners/sanjay-kamtekar.webp",
+    title: "Dr. Sanjay Kamtekar",
+    subtitle: "Chief Academic Officer at MIT World Peace University",
+  },
+  {
     imgUri: "/img/conveners/ganesh-pokhale.jpg",
     title: "Mr. Ganesh Pokhale",
     subtitle: "Registrar at MIT World Peace University",
   },
   {
-    imgUri: "/img/conveners/sanjay-kamtekar.webp",
-    title: "Dr. Sanjay Kamtekar",
-    subtitle: "Chief Academic Officer at MIT World Peace University",
+    imgUri: "/img/conveners/hitesh-joshi.jpeg",
+    title: "Dr. Hitesh Joshi",
+    subtitle: "Director - Student Affairs at MIT World Peace University",
   },
+];
+
+const coConvenersData = [
+  {
+    imgUri: "/img/coordinators/krishna-warhade.jpg",
+    title: "Dr. Krishna Warhade",
+    subtitle: "Dean, Doctoral Program",
+  },
+  {
+    imgUri: "/img/coordinators/kishanprasad-gunale.jpg",
+    title: "Dr. Kishanprasad Gunale",
+    subtitle:
+      "Assistant Professor, Electronics & Telecommunication Engineering",
+  },
+];
+
+const DeanData = [
   {
     imgUri: "/img/conveners/siddharth-chakrabarti.jpg",
     title: "Dr. Siddharth Chakrabarti",
@@ -72,20 +94,6 @@ const ConvenersData = [
   },
 ];
 
-const coConvenersData = [
-  {
-    imgUri: "/img/coordinators/krishna-warhade.jpg",
-    title: "Dr. Krishna Warhade",
-    subtitle: "Dean, Doctoral Program",
-  },
-  {
-    imgUri: "/img/coordinators/kishanprasad-gunale.jpg",
-    title: "Dr. Kishanprasad Gunale",
-    subtitle:
-      "Assistant Professor, Electronics & Telecommunication Engineering",
-  },
-];
-
 const facultyData = [
   {
     imgUri: "/img/division-coordinators/deepali-javale.jpg",
@@ -117,39 +125,57 @@ const Page = () => {
       size={1.1}
       backgroundColor={0xffffff}
     >
-      <section className="relative flex w-full justify-center rounded-lg bg-transparent md:shadow-xl">
+      <section className="relative flex w-full justify-center rounded-lg bg-transparent md:shadow-xl mt-16">
         <div className="z-50 p-4 container mx-auto">
           {/* Conveners */}
           <TextAnimate
             animation="blurInUp"
             by="character"
-            className="text-center text-5xl font-semibold py-8"
+            className="text-center text-4xl md:text-5xl font-semibold py-6 md:py-8"
           >
             Conveners
           </TextAnimate>
-          <div className="flex flex-wrap justify-center gap-4 mb-16">
-            {ConvenersData.map((person, i) => (
-              <div key={i} className="w-full max-w-sm">
+          <div className="flex flex-wrap justify-center gap-4 mb-12 md:mb-16">
+            {/* Milind Pande Card */}
+            <div className="w-full flex justify-center mb-4">
+              <div className="w-full max-w-[300px] sm:max-w-[360px]">
                 <Card
-                  imgUri={person.imgUri}
-                  title={person.title}
-                  subtitle={person.subtitle}
+                  imgUri="/img/conveners/milind-pande.jpg"
+                  title="Dr. Milind Pande"
+                  subtitle="Pro Vice Chancellor at MIT World Peace University"
                 />
               </div>
-            ))}
+            </div>
+
+            {/* Other Conveners */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 w-full">
+              {ConvenersData.filter(
+                (person) => person.title !== "Dr. Milind Pande"
+              ).map((person, i) => (
+                <div key={i} className="flex justify-center">
+                  <div className="w-full max-w-[300px] sm:max-w-[360px]">
+                    <Card
+                      imgUri={person.imgUri}
+                      title={person.title}
+                      subtitle={person.subtitle}
+                    />
+                  </div>
+                </div>
+              ))}
+            </div>
           </div>
 
           {/* Co-Conveners */}
           <TextAnimate
             animation="blurInUp"
             by="character"
-            className="text-center text-5xl font-semibold py-8"
+            className="text-center text-4xl md:text-5xl font-semibold py-6 md:py-8"
           >
-            Co-Ordinators
+            Co-Conveners
           </TextAnimate>
-          <div className="flex flex-wrap justify-center gap-4 mb-16">
+          <div className="flex justify-center gap-8 mb-12 md:mb-16">
             {coConvenersData.map((person, i) => (
-              <div key={i} className="w-full max-w-sm">
+              <div key={i} className="w-full max-w-[300px] sm:max-w-[360px]">
                 <Card
                   imgUri={person.imgUri}
                   title={person.title}
@@ -159,17 +185,37 @@ const Page = () => {
             ))}
           </div>
 
-          {/* Faculty */}
+          {/* Dean */}
           <TextAnimate
             animation="blurInUp"
             by="character"
-            className="text-center text-5xl font-semibold py-8"
+            className="text-center text-4xl md:text-5xl font-semibold py-6 md:py-8"
+          >
+            Dean
+          </TextAnimate>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 mb-12 md:mb-16 place-items-center">
+            {DeanData.map((person, i) => (
+              <div key={i} className="w-full max-w-[300px] sm:max-w-[360px]">
+                <Card
+                  imgUri={person.imgUri}
+                  title={person.title}
+                  subtitle={person.subtitle}
+                />
+              </div>
+            ))}
+          </div>
+
+          {/* Division Co-Ordinators */}
+          <TextAnimate
+            animation="blurInUp"
+            by="character"
+            className="text-center text-4xl md:text-5xl font-semibold py-6 md:py-8"
           >
             Division Co-Ordinators
           </TextAnimate>
-          <div className="flex flex-wrap justify-center gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-12 md:mb-16 place-items-center">
             {facultyData.map((person, i) => (
-              <div key={i} className="w-full max-w-sm">
+              <div key={i} className="w-full max-w-[300px] sm:max-w-[360px]">
                 <Card
                   imgUri={person.imgUri}
                   title={person.title}
