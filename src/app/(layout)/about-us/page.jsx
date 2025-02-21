@@ -32,7 +32,15 @@ const Page = () => {
             />
           </div>
           <div className="w-full md:w-1/2">
-            <AnimatedCard />
+          <AnimatedCard 
+            title="Seed Thought" 
+            content={[
+              "As we unite for HACK MIT-WPU 2025, we embrace the spirit of innovation, collaboration, and purpose. This event is more than a competition; it is a testament to our shared vision of progress—where technology meets wisdom, and knowledge is guided by values.",
+              "Rooted in the principles of ‘tyaag’ and ‘samparpan,’ our journey reflects the ideals of discipline, dedication, and devotion.",
+              "Inspired by Swami Vivekananda’s vision and the teachings of Revered Prof. Dr. Vishwanath Karad, we recognize that true innovation flourishes when science and spirituality converge.",
+              "In shaping an Aatmanirbhar Bharat and striving for Bharat’s role as a Vishwaguru, we carry forward the responsibility of creating meaningful change, driven by intellect and guided by higher ideals."
+            ]}
+          />
           </div>
           
         </div>
@@ -47,7 +55,15 @@ const Page = () => {
             />
           </div>
           <div className="w-full md:w-1/2">
-            <AnimatedCard />
+          <AnimatedCard 
+          title="Seed Thought" 
+          content= {[
+            "At MIT World Peace University, we are committed to fostering the holistic development of our students through innovative education. Beyond academics, we nurture adaptability, problem-solving, and leadership skills, preparing students to excel in an ever-evolving professional landscape.",
+            "HACKMITWPU 2025 is a transformative three-day event designed to spark innovation, creativity, and entrepreneurship. This Executive President’s Challenge encourages students to explore cutting-edge solutions in technology, management, science, social sciences, fine arts, sustainable studies, and public health.",
+            "More than just a competition, HACKMITWPU 2025 is a dynamic platform for collaboration and critical thinking. It empowers students to push boundaries, challenge conventions, and develop impactful solutions that drive real-world change. Through teamwork, mentorship, and groundbreaking ideas, we pave the way for a brighter future.",
+          ]}
+          
+        />
           </div>
           
         </div>

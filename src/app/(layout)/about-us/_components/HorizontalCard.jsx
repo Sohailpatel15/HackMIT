@@ -36,11 +36,11 @@ export const HorizontalCard = ({ imgUri, title, role, index, textColor }) => {
   return (
     <div
       ref={cardRef}
-      className="w-5/6 h-[32rem] rounded-3xl shadow-md overflow-hidden border transition-transform duration-200 cursor-pointer hover:border-yellow-400 relative group"
+      className="w-full md:w-5/6 h-[32rem] rounded-3xl shadow-md overflow-hidden border transition-transform duration-200 cursor-pointer hover:border-yellow-400 relative group"
     >
       <img src={imgUri} alt={title} className="w-full h-full object-cover" />
       <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-hack-400 to-transparent p-6 transform transition-all duration-300">
-          <h3
+        <h3
           className={clsx(
             "font-bold text-4xl group-hover:text-[26px] transition-all duration-500 mb-2",
             textColor

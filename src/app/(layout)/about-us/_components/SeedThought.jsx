@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const AnimatedCard = () => {
+const AnimatedCard = ({ title, content }) => {
   const [isHovered, setIsHovered] = useState(false);
 
   return (
@@ -34,7 +34,7 @@ const AnimatedCard = () => {
             ${isHovered ? 'bg-opacity-90' : 'bg-opacity-100'}`}>
             <h2 className={`text-2xl md:text-3xl font-bold text-hack-500 mb-2 transition-all duration-500
               ${isHovered ? 'md:translate-x-2' : 'translate-x-0'}`}>
-              Seed Thought
+              {title}
             </h2>
             <div 
               className={`h-1 bg-yellow-400 transition-all duration-700 ease-in-out
@@ -45,11 +45,7 @@ const AnimatedCard = () => {
 
         {/* Card Content with Staggered Animations */}
         <div className="p-4 space-y-3 relative max-h-[calc(32rem-8rem)] overflow-y-auto">
-          {[
-            "In the realm of innovation and progress, seed thoughts serve as the foundation of great achievements. These initial sparks of inspiration, no matter how small they may seem at first, have the potential to grow into transformative ideas that can reshape our understanding and approach to challenges.",
-            "Like seeds scattered in fertile soil, these thoughts need nurturing, patience, and dedication to flourish. They require the right environment, careful attention, and sometimes, the collaborative effort of many minds working together towards a common goal. Through this process, what begins as a simple concept can evolve into groundbreaking solutions.",
-            "As we cultivate these seed thoughts, we must remain open to new perspectives and possibilities. The journey from concept to reality is often unpredictable, but it is precisely this uncertainty that makes the process so exciting and rewarding. Each seed thought represents not just an idea, but a potential future waiting to be discovered and shaped by those brave enough to nurture it."
-          ].map((text, index) => (
+          {content.map((text, index) => (
             <p
               key={index}
               className={`text-sm md:text-base text-gray-700 leading-relaxed transition-all duration-700
