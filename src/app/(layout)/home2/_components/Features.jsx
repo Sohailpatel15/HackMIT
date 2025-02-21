@@ -51,11 +51,15 @@ const BentoCard = ({ src, title, description }) => {
         autoPlay
         className="absolute left-0 top-0 size-full object-cover object-center"
       />
-      <div className="relative z-10 flex size-full flex-col justify-between p-5 text-accent-100">
+      <div className="relative z-10 flex size-full flex-col justify-between p-5">
         <div>
-          <h1 className="bento-title ">{title}</h1>
+          <h1 className="bento-title text-yellow-400 drop-shadow-[0_0_10px_rgba(255,223,0,0.8)]">
+            {title}
+          </h1>
           {description && (
-            <p className=" mt-3 max-w-64 text-xs md:text-base">{description}</p>
+            <p className="mt-3 max-w-64 text-xs md:text-base text-yellow-300 drop-shadow-[0_0_5px_rgba(255,223,0,0.6)]">
+              {description}
+            </p>
           )}
         </div>
       </div>
@@ -72,12 +76,13 @@ const Features = () => {
             The Ultimate Hackathon Experience
           </p>
           <p className="max-w-md font-circular-web text-lg text-hack-50 opacity-50 text-black">
-            Dive into HACKMIT-WPU, where creativity meets technology. Build, innovate, and push the boundaries of problem-solving.
+            Dive into HACKMIT-WPU, where creativity meets technology. Build,
+            innovate, and push the boundaries of problem-solving.
           </p>
         </div>
         <BentoTilt className="border-hsla relative mb-7 h-96 w-full overflow-hidden rounded-md md:h-[65vh]">
           <BentoCard
-            src="./videos/hackVideo4.mp4"
+            src="./videos/hackmitVideo1.MOV"
             title={
               <>
                 Inn<b>o</b>vate
@@ -89,7 +94,7 @@ const Features = () => {
         <div className="grid h-[135vh] grid-cols-2 grid-rows-3 gap-7">
           <BentoTilt className="bento-tilt_1 row-span-1 md:col-span-1 md:row-span-2">
             <BentoCard
-              src="./videos/hackVideo5.mp4"
+              src="./videos/hackmitVideo2.MOV"
               title={
                 <>
                   Coll<b>a</b>borate
@@ -100,7 +105,7 @@ const Features = () => {
           </BentoTilt>
           <BentoTilt className="bento-tilt_1 row-span-1 ms-32 md:col-span-1 md:ms-0">
             <BentoCard
-              src="./videos/hackVideo3.mov"
+              src="./videos/hackmitVideo3.MOV"
               title={
                 <>
                   Cod<b>e</b>
@@ -111,7 +116,7 @@ const Features = () => {
           </BentoTilt>
           <BentoTilt className="bento-tilt_1 me-14 md:col-span-1 md:me-0">
             <BentoCard
-              src="./videos/hackVideo4.mp4"
+              src="./videos/hackmitVideo4.MOV"
               title={
                 <>
                   S<b>h</b>owcase
@@ -133,7 +138,7 @@ const Features = () => {
 
           <div className="bento-tilt_2">
             <video
-              src="./videos/hackVideo5.mp4"
+              src="./videos/hackVideo1.mp4"
               loop
               muted
               autoPlay
@@ -144,7 +149,6 @@ const Features = () => {
       </div>
       <div className="absolute inset-0 z-0">
         <BackgroundBeams />
-        
       </div>
     </section>
   );
