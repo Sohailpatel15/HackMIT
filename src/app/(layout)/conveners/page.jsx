@@ -191,7 +191,7 @@ const Page = () => {
             by="character"
             className="text-center text-4xl md:text-5xl font-semibold py-6 md:py-8"
           >
-            Dean
+            Deans
           </TextAnimate>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 mb-12 md:mb-16 place-items-center">
             {DeanData.map((person, i) => (
