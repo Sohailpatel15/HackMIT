@@ -25,8 +25,10 @@ const Story = () => {
 
           <div className="max-w-xl">
             <p className="font-circular-web text-lg text-violet-50">
-              Where innovation meets passion—HACKMIT-WPU is the launchpad for the
-              next big idea.
+              Where innovation meets passion - HACKMIT-WPU is the launchpad for the
+              next big idea that will change the world. We bring together the
+              brightest minds to collaborate, solve real-world challenges, and
+              redefine the future of technology through innovation and creativity. 
             </p>
             <Button
               id="realm-button"

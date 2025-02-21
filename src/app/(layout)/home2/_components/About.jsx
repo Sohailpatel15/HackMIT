@@ -48,8 +48,8 @@ const About = () => {
           />
 
 
-          <div className="about-subtext">
-            <p>Welcome to HACKMIT-WPU—Code, Innovate, Dominate!</p>
+          <div className="about-subtext mt-5 font-bold">
+            <p className="my-2">Welcome to HACKMIT-WPU - Code, Innovate, Dominate!</p>
             <p className="text-gray-500">
               HACK MIT-WPU brings together the brightest minds to collaborate, solve real-world challenges, and redefine the future of technology through innovation and creativity.
             </p>
