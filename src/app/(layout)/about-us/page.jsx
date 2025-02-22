@@ -33,7 +33,7 @@ const Page = () => {
           </div>
           <div className="w-full md:w-1/2">
           <AnimatedCard 
-            title="Seed Thought" 
+            title="Founder's Thought" 
             content={[
               "As we unite for HACK MIT-WPU 2025, we embrace the spirit of innovation, collaboration, and purpose. This event is more than a competition; it is a testament to our shared vision of progress—where technology meets wisdom, and knowledge is guided by values.",
               "Rooted in the principles of ‘tyaag’ and ‘samparpan,’ our journey reflects the ideals of discipline, dedication, and devotion.",

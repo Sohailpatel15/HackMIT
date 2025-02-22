@@ -42,7 +42,7 @@ const Card = ({ imgUri, title, subtitle, rotation, variant, index }) => {
     <CardTilt className="w-full max-w-sm transform transition-all duration-300 hover:scale-105 rounded-3xl cursor-pointer">
       <div
         ref={cardRef}
-        className={`rounded-3xl relative h-fit aspect-[5/6] overflow-hidden rotate-${rotation} group border-2 border-transparent hover:border-yellow-400 transition-all duration-300`}
+        className={`rounded-3xl relative h-fit aspect-[5/6] overflow-hidden rotate-${rotation} group border-2 border-x-hack-400 hover:border-yellow-400 transition-all duration-300`}
       >
         <img
           className="object-cover w-full"

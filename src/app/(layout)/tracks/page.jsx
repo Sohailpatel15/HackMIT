@@ -35,6 +35,7 @@ const Page = () => {
                     title={card.title}
                     subtitle={card.description}
                     index={card.id}
+                    imgUri={card.src}
                   />
                 </div>
               ))}

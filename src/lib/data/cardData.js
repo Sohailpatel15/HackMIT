@@ -4,7 +4,7 @@ export const cardData = [
   {
     id: 1,
     title: "Ideathon",
-    src: "https://images.unsplash.com/photo-1476842634003-7dcca8f832de?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80",
+    src: "/img/tracks/ideathon.jpg",
     description: "A platform to present innovative ideas and propose solutions without a physical prototype.",
     header: <Skeleton />, 
     className: "h-4 w-4",
@@ -15,12 +15,12 @@ export const cardData = [
     description: "Challenges participants to propose solutions with software, hardware, experiments, or case studies.",
     header: <Skeleton />,
     className: "h-4 w-4",
-    src: "https://images.unsplash.com/photo-1476842634003-7dcca8f832de?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80",
+    src: "/img/tracks/workathon.jpg",
   },
   {
     id: 3,
     title: "Data Quest",
-    src: "https://images.unsplash.com/photo-1476842634003-7dcca8f832de?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80",
+    src: "/img/tracks/data quest.jpg",
     description: "A two-day hackathon where participants tackle real-world problems using curated datasets.",
     header: <Skeleton />,
     className: "h-4 w-4",
@@ -28,7 +28,7 @@ export const cardData = [
   {
     id: 4,
     title: "HackAIthon",
-    src: "https://images.unsplash.com/photo-1476842634003-7dcca8f832de?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80",
+    src: "/img/tracks/hackaithon.jpg",
     description: "Focuses on building AI-driven solutions using large language models, external APIs, and custom models.",
     header: <Skeleton />,
     className: "h-4 w-4",
@@ -36,7 +36,7 @@ export const cardData = [
   {
     id: 5,
     title: "Case-X",
-    src: "https://images.unsplash.com/photo-1476842634003-7dcca8f832de?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80",
+    src: "/img/tracks/case x.jpg",
     description: "An interactive track where students apply analytical, business, and critical thinking skills to case studies.",
     header: <Skeleton />,
     className: "h-4 w-4",
@@ -44,7 +44,7 @@ export const cardData = [
   {
     id: 6,
     title: "Visualathon",
-    src: "https://images.unsplash.com/photo-1476842634003-7dcca8f832de?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80",
+    src: "/img/tracks/visualathon.jpg",
     description: "Focused on data visualization and UI/UX design.",
     header: <Skeleton />,
     className: "h-4 w-4",
@@ -52,7 +52,7 @@ export const cardData = [
   {
     id: 7,
     title: "Cosmotron",
-    src: "https://images.unsplash.com/photo-1476842634003-7dcca8f832de?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80",
+    src: "/img/tracks/cosmothon.jpg",
     description: "Tackle challenges in space sciences, including astronomy, astrophysics, and satellite technology.",
     header: <Skeleton />,
     className: "h-4 w-4",
@@ -60,7 +60,7 @@ export const cardData = [
   {
     id: 8,
     title: "AWS",
-    src: "https://images.unsplash.com/photo-1476842634003-7dcca8f832de?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80",
+    src: "/img/tracks/aws.jpg",
     description: "Leverage AWS cloud computing to develop scalable and efficient industry solutions.",
     header: <Skeleton />,
     className: "h-4 w-4",
@@ -68,7 +68,7 @@ export const cardData = [
   {
     id: 9,
     title: "Think-Biz",
-    src: "https://images.unsplash.com/photo-1476842634003-7dcca8f832de?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80",
+    src: "/img/tracks/think biz.jpg",
     description: "Challenges aspiring entrepreneurs to innovate a product or service within set themes.",
     header: <Skeleton />,
     className: "h-4 w-4",
@@ -76,7 +76,7 @@ export const cardData = [
   {
     id: 10,
     title: "Capture The Flag",
-    src: "https://images.unsplash.com/photo-1476842634003-7dcca8f832de?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80",
+    src: "/img/tracks/ctf.jpg",
     description: "A cybersecurity challenge testing skills in cryptography, reverse engineering, web exploitation, and more.",
     header: <Skeleton />,
     className: "h-4 w-4",
@@ -84,7 +84,7 @@ export const cardData = [
   {
     id: 11,
     title: "Pharmathon",
-    src: "https://images.unsplash.com/photo-1476842634003-7dcca8f832de?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80",
+    src: "/img/tracks/pharmathon.jpg",
     description: "Proposing innovative solutions in pharmaceutical sciences and bio-related fields.",
     header: <Skeleton />,
     className: "h-4 w-4",
@@ -92,7 +92,7 @@ export const cardData = [
   {
     id: 12,
     title: "Co-Creation",
-    src: "https://images.unsplash.com/photo-1476842634003-7dcca8f832de?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80",
+    src: "/img/tracks/CO CREATION.jpg",
     description: "Bringing diverse individuals together to collaborate and solve real-world challenges.",
     header: <Skeleton />,
     className: "h-4 w-4",
