@@ -42,7 +42,7 @@ const Story = () => {
         {/* Right Image Section */}
         <div className="w-full lg:w-1/2 relative">
           <img
-            src="/img/hackImage-3.JPG"
+            src="/img/our-story.jpeg"
             alt="entrance"
             className="h-full w-full object-cover rounded-3xl"
           />
