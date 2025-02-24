@@ -34,8 +34,10 @@ const Page = () => {
                     variant="primary"
                     title={card.title}
                     subtitle={card.description}
-                    index={card.id}
+                    index={index}
                     imgUri={card.src}
+                    psUrl={card.psUrl}
+                    registerUrl={card.registerUrl}
                   />
                 </div>
               ))}
