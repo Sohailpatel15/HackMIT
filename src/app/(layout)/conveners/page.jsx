@@ -21,16 +21,6 @@ const ConvenersData = [
     title: "Dr. Sanjay Kamtekar",
     subtitle: "Chief Academic Officer at MIT World Peace University",
   },
-  {
-    imgUri: "/img/conveners/ganesh-pokhale.jpg",
-    title: "Mr. Ganesh Pokhale",
-    subtitle: "Registrar at MIT World Peace University",
-  },
-  {
-    imgUri: "/img/conveners/hitesh-joshi.jpeg",
-    title: "Dr. Hitesh Joshi",
-    subtitle: "Director - Student Affairs at MIT World Peace University",
-  },
 ];
 
 const coConvenersData = [
@@ -43,7 +33,23 @@ const coConvenersData = [
     imgUri: "/img/coordinators/kishanprasad-gunale.jpg",
     title: "Dr. Kishanprasad Gunale",
     subtitle:
-      "Assistant Professor, Electronics & Telecommunication Engineering",
+      "Assistant Professor, EnTC  ",
+  },
+  {
+    imgUri: "/img/conveners/ganesh-pokhale.jpg",
+    title: "Mr. Ganesh Pokhale",
+    subtitle: "Registrar at MIT World Peace University",
+  },
+  {
+    imgUri: "/img/conveners/hitesh-joshi.jpeg",
+    title: "Dr. Hitesh Joshi",
+    subtitle: "Director - Student Affairs at MIT World Peace University",
+  },
+  {
+    imgUri: "/img/conveners/mangesh-bedekar.jpg",
+    title: "Dr. Mangesh Bedekar",
+    subtitle:
+      "Dean, School of Computer Science and Engineering  at MIT World Peace University",
   },
 ];
 
@@ -53,12 +59,6 @@ const DeanData = [
     title: "Dr. Siddharth Chakrabarti",
     subtitle:
       "Dean, School of Engineering and Technology at MIT World Peace University",
-  },
-  {
-    imgUri: "/img/conveners/mangesh-bedekar.jpg",
-    title: "Dr. Mangesh Bedekar",
-    subtitle:
-      "Dean, School of Computer Science and Engineering  at MIT World Peace University",
   },
   {
     imgUri: "/img/conveners/deependra-sharma.jpg",
@@ -148,7 +148,7 @@ const Page = () => {
             </div>
 
             {/* Other Conveners */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 w-full">
+            <div className="flex flex-col lg:flex-row justify-center gap-4 w-full">
               {ConvenersData.filter(
                 (person) => person.title !== "Dr. Milind Pande"
               ).map((person, i) => (
@@ -169,11 +169,11 @@ const Page = () => {
           <TextAnimate
             animation="blurInUp"
             by="character"
-            className="text-center text-4xl md:text-5xl font-semibold py-6 md:py-8"
+            className="text-center text-4xl xl:text-5xl font-semibold py-6 md:py-8"
           >
             Co-Conveners
           </TextAnimate>
-          <div className="flex justify-center gap-8 mb-12 md:mb-16">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 mb-12 md:mb-16 place-items-center">
             {coConvenersData.map((person, i) => (
               <div key={i} className="w-full max-w-[300px] sm:max-w-[360px]">
                 <Card
