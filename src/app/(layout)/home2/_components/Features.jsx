@@ -70,7 +70,7 @@ const BentoCard = ({ src, title, description }) => {
 const Features = () => {
   return (
     <section className="bg-hack-400 pb-52">
-      <div className="container mx-auto px-3 md:px-10 ">
+      <div className="container mx-auto px-3 md:px-10">
         <div className="px-5 py-32">
           <p className="font-circular-web text-lg text-hack-50 text-hack-100">
             The Ultimate Hackathon Experience
@@ -80,6 +80,7 @@ const Features = () => {
             innovate, and push the boundaries of problem-solving.
           </p>
         </div>
+        
         <BentoTilt className="border-hsla relative mb-7 h-96 w-full overflow-hidden rounded-md md:h-[65vh]">
           <BentoCard
             src="./videos/hackmitVideo1.MOV"
@@ -91,8 +92,10 @@ const Features = () => {
             description="Transform your ideas into reality at HACKMIT-WPU."
           />
         </BentoTilt>
-        <div className="grid h-[135vh] grid-cols-2 grid-rows-3 gap-7">
-          <BentoTilt className="bento-tilt_1 row-span-1 md:col-span-1 md:row-span-2">
+        
+
+        <div className="flex flex-col gap-7 md:grid md:h-[135vh] md:grid-cols-2 md:grid-rows-3">
+          <BentoTilt className="h-80 w-full overflow-hidden rounded-md md:h-full md:row-span-1 md:col-span-1">
             <BentoCard
               src="./videos/hackmitVideo2.MOV"
               title={
@@ -103,7 +106,8 @@ const Features = () => {
               description=""
             />
           </BentoTilt>
-          <BentoTilt className="bento-tilt_1 row-span-1 ms-32 md:col-span-1 md:ms-0">
+          
+          <BentoTilt className="h-80 w-full overflow-hidden rounded-md md:h-full md:row-span-1 md:col-span-1">
             <BentoCard
               src="./videos/hackmitVideo3.MOV"
               title={
@@ -114,7 +118,8 @@ const Features = () => {
               description=""
             />
           </BentoTilt>
-          <BentoTilt className="bento-tilt_1 me-14 md:col-span-1 md:me-0">
+          
+          <BentoTilt className="h-80 w-full overflow-hidden rounded-md md:h-full md:col-span-1">
             <BentoCard
               src="./videos/hackmitVideo4.MOV"
               title={
@@ -126,17 +131,16 @@ const Features = () => {
             />
           </BentoTilt>
 
-          <div className="bento-tilt_2">
-            <div className="flex size-full flex-col justify-between bg-hack-500 p-5">
+          <div className="h-80 w-full overflow-hidden rounded-md md:h-full md:col-span-1 bg-hack-500">
+            <div className="flex size-full flex-col justify-between p-5">
               <h1 className="bento-title max-w-64 text-hack-100">
                 M<b>o</b>re Surprises Await!
               </h1>
-
               <TiLocationArrow className="m-5 scale-[5] self-end" />
             </div>
           </div>
 
-          <div className="bento-tilt_2">
+          <div className="h-80 w-full overflow-hidden rounded-md md:h-full md:col-span-1">
             <video
               src="./videos/hackVideo1.mp4"
               loop

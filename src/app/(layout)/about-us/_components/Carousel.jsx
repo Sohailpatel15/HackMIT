@@ -69,7 +69,7 @@ const data = [
     // },
     {
       category: "Workshops",
-      title: "Hands-on learning experiences from industry experts.",
+      title: "Coming soon...",
       src: "https://images.unsplash.com/photo-1599507593499-a3f7d7d97667?q=80&w=2515&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
 
     },

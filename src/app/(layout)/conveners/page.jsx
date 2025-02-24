@@ -199,16 +199,6 @@ const core = [
     imgUri: "/img/core-team/avnish.png",
     title: "Mr. Avinish Kumar",
     subtitle: "Program Manager",
-  },
-  {
-    imgUri: "/img/core-team/sangita.png",
-    title: "Mrs.Sangita",
-    subtitle: "Senior Executive",
-  },
-  {
-    imgUri: "/img/core-team/vasanti.png",
-    title: "Ms. Vasanti Bhandwalkar",
-    subtitle: "Executive Assistant",
   }
 ];
 
@@ -301,117 +291,102 @@ const Page = () => {
           </div>
 
 
-          {/* Division Co-Ordinators */}
           <TextAnimate
             animation="blurInUp"
             by="character"
-            className="text-center text-4xl md:text-5xl font-semibold py-6 md:pt-24"
+            className="text-center text-2xl mt-16 md:text-5xl font-semibold py-8 md:pt-16 "
           >
-            Division I Co-Ordinators
+            Division Co-ordinators I
           </TextAnimate>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-12 md:mb-16">
-              <div className="col-span-full flex justify-center sm:col-span-2 lg:col-span-4 gap-4">
-                    {div1.map((person, i) => (
-                        <div key={i} className="w-full max-w-[300px] sm:max-w-[360px]">
-                          <Card
-                            imgUri={person.imgUri}
-                            title={person.title}
-                            subtitle={person.subtitle}
-                          />
-                        </div>
-                  ))}
+          <div className="flex flex-col items-center lg:flex-row lg:flex-wrap justify-center gap-4 w-full">
+            {div1.map((person, i) => (
+              <div key={i} className="w-full max-w-[300px] sm:max-w-[360px]">
+                <Card
+                  imgUri={person.imgUri}
+                  title={person.title}
+                  subtitle={person.subtitle}
+                />
               </div>
-            
+            ))}
           </div>
 
-          {/* Division Co-Ordinators */}
           <TextAnimate
             animation="blurInUp"
             by="character"
-            className="text-center text-4xl md:text-5xl font-semibold py-6 md:py-8"
+            className="text-center text-2xl mt-16 md:text-5xl font-semibold py-8 md:pt-16"
           >
-            Division II Co-Ordinators
+            Division Co-ordinators II
           </TextAnimate>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-12 md:mb-16">
-              <div className="col-span-full flex justify-center sm:col-span-2 lg:col-span-4 gap-4">
-                    {div2.map((person, i) => (
-                        <div key={i} className="w-full max-w-[300px] sm:max-w-[360px]">
-                          <Card
-                            imgUri={person.imgUri}
-                            title={person.title}
-                            subtitle={person.subtitle}
-                          />
-                        </div>
-                  ))}
+          <div className="flex flex-col items-center lg:flex-row lg:flex-wrap justify-center gap-4 w-full">
+            {div2.map((person, i) => (
+              <div key={i} className="w-full max-w-[300px] sm:max-w-[360px]">
+                <Card
+                  imgUri={person.imgUri}
+                  title={person.title}
+                  subtitle={person.subtitle}
+                />
               </div>
-            
+            ))}
           </div>
 
-          {/* Division Co-Ordinators */}
           <TextAnimate
             animation="blurInUp"
             by="character"
-            className="text-center text-4xl md:text-5xl font-semibold py-6 md:py-8"
+            className="text-center text-2xl mt-16 md:text-5xl font-semibold py-8 md:pt-16"
           >
-            Division III Co-Ordinators
+            Division Co-ordinators III
           </TextAnimate>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-12 md:mb-16">
-              <div className="col-span-full flex justify-center sm:col-span-2 lg:col-span-4 gap-4">
-                    {div3.map((person, i) => (
-                        <div key={i} className="w-full max-w-[300px] sm:max-w-[360px]">
-                          <Card
-                            imgUri={person.imgUri}
-                            title={person.title}
-                            subtitle={person.subtitle}
-                          />
-                        </div>
-                  ))}
+          <div className="flex flex-col items-center lg:flex-row lg:flex-wrap justify-center gap-4 w-full">
+            {div3.map((person, i) => (
+              <div key={i} className="w-full max-w-[300px] sm:max-w-[360px]">
+                <Card
+                  imgUri={person.imgUri}
+                  title={person.title}
+                  subtitle={person.subtitle}
+                />
               </div>
-            
+            ))}
           </div>
-          {/* Division Co-Ordinators */}
+
+
           <TextAnimate
             animation="blurInUp"
             by="character"
-            className="text-center text-4xl md:text-5xl font-semibold py-6 md:py-8"
+            className="text-center text-2xl mt-16 md:text-5xl font-semibold py-8 md:pt-16"
           >
-            Division IV Co-Ordinators
+            Division Co-ordinators IV
           </TextAnimate>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-12 md:mb-16">
-              <div className="col-span-full flex justify-center sm:col-span-2 lg:col-span-4 gap-4">
-                    {div4.map((person, i) => (
-                        <div key={i} className="w-full max-w-[300px] sm:max-w-[360px]">
-                          <Card
-                            imgUri={person.imgUri}
-                            title={person.title}
-                            subtitle={person.subtitle}
-                          />
-                        </div>
-                  ))}
+          <div className="flex flex-col items-center lg:flex-row lg:flex-wrap justify-center gap-4 w-full">
+            {div4.map((person, i) => (
+              <div key={i} className="w-full max-w-[300px] sm:max-w-[360px]">
+                <Card
+                  imgUri={person.imgUri}
+                  title={person.title}
+                  subtitle={person.subtitle}
+                />
               </div>
-            
+            ))}
           </div>
 
+          <TextAnimate
+            animation="blurInUp"
+            by="character"
+            className="text-center text-2xl mt-16 md:text-5xl font-semibold py-8 md:pt-16"
+          >
+            Core Team
+          </TextAnimate>
+          <div className="flex flex-col items-center lg:flex-row lg:flex-wrap justify-center gap-4 w-full">
+            {core.map((person, i) => (
+              <div key={i} className="w-full max-w-[300px] sm:max-w-[360px]">
+                <Card
+                  imgUri={person.imgUri}
+                  title={person.title}
+                  subtitle={person.subtitle}
+                />
+              </div>
+            ))}
+          </div>
 
-         {/* Division Co-Ordinators */}
-            <TextAnimate
-              animation="blurInUp"
-              by="character"
-              className="text-center text-4xl md:text-5xl font-semibold py-6 md:py-8"
-            >
-              Core Team
-            </TextAnimate>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-12 md:mb-16">
-              {core.map((person, i) => (
-                <div key={i} className="w-full">
-                  <Card
-                    imgUri={person.imgUri}
-                    title={person.title}
-                    subtitle={person.subtitle}
-                  />
-                </div>
-              ))}
-            </div>
         </div>
 
         <DotPattern
