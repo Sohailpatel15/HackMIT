@@ -5,7 +5,7 @@ import gsap from "gsap";
 import { ChevronUpIcon, ChevronDownIcon, LightbulbIcon } from "lucide-react";
 import React, { useEffect, useRef, useState } from "react";
 
-const Card = ({ imgUri, title, subtitle, rotation, variant, index }) => {
+const Card = ({ imgUri, title, subtitle, rotation, variant, index, psUrl, registerUrl }) => {
   const [isOpen, setIsOpen] = useState(false);
   const cardRef = useRef(null);
 
@@ -63,7 +63,7 @@ const Card = ({ imgUri, title, subtitle, rotation, variant, index }) => {
               <ChevronUpIcon className="w-4 h-4 md:w-5 md:h-5 text-white md:animate-bounce" />
             )}
           </button>
-          
+
           <h3 className="font-semibold text-xl md:text-2xl mb-2 group-hover:text-[26px] group-hover:my-4 transition-all duration-500">
             {title || "Title goes here"}
           </h3>
@@ -71,7 +71,7 @@ const Card = ({ imgUri, title, subtitle, rotation, variant, index }) => {
             {subtitle ||
               "Lorem ipsum, dolor sit amet consectetur adipisicing elit."}
           </p>
-          <div 
+          <div
             className={clsx(
               "flex space-x-2 md:space-x-4 transition-all duration-300",
               {
@@ -81,12 +81,19 @@ const Card = ({ imgUri, title, subtitle, rotation, variant, index }) => {
               "md:opacity-0 md:-translate-y-4 md:group-hover:opacity-100 md:group-hover:translate-y-0"
             )}
           >
+            <a href={registerUrl || "#"} target="_blank">
             <button className="px-3 md:px-7 py-1.5 md:py-2.5 text-xs md:text-sm font-semibold text-accent-100 bg-white rounded-full border border-accent-100 hover:bg-accent-100 hover:text-white transition-colors duration-200">
               Register
             </button>
-            <button className="px-3 md:px-6 py-1.5 md:py-2.5 text-xs md:text-sm font-semibold text-hack-300 bg-white rounded-full border border-hack-100 hover:bg-hack-300 hover:text-white transition-colors duration-200">
-              Problem Statements
-            </button>
+            </a>
+            <a
+              href={psUrl || "#"}
+              target="_blank"
+              >
+              <button className="px-3 md:px-6 py-1.5 md:py-2.5 text-xs md:text-sm font-semibold text-hack-300 bg-white rounded-full border border-hack-100 hover:bg-hack-300 hover:text-white transition-colors duration-200">
+                Problem Statements
+              </button>
+            </a>
           </div>
         </div>
       </div>
@@ -102,7 +109,7 @@ export const HorizontalCard = ({
   isGradient,
 }) => {
   const [isOpen, setIsOpen] = useState(false);
-  
+
   return (
     <div
       className={`relative rounded-3xl aspect-[16/10] h-fit overflow-hidden bg-hack-100 rotate-${rotation} 
@@ -139,7 +146,7 @@ export const HorizontalCard = ({
           {subtitle ||
             "Lorem ipsum, dolor sit amet consectetur adipisicing elit."}
         </p>
-        <div 
+        <div
           className={clsx(
             "flex space-x-2 md:space-x-4 transition-all duration-300",
             {

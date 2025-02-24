@@ -21,14 +21,15 @@ const Page = () => {
     >
       <div className="z-50 p-4 container mx-auto mt-32">
         {/* Founders & Presidents */}
-        <div className="flex flex-col md:flex-row justify-center items-center gap-8 mb-48">
-          <div className="w-full md:w-1/2">
+        <div className="flex flex-col md:flex-row justify-center items-center mb-48">
+        <div className="w-full md:w-1/2 mb-10 md:mb-0">
             <HorizontalCard 
               imgUri="/img/vishwanath-karad.jpg" 
               title="Dr. Vishwanath karad" 
               subtitle="Founder" 
               textColor="text-hack-100"
-              index={1} 
+              imageSpec="contain"
+              index={1}
             />
           </div>
           <div className="w-full md:w-1/2">
@@ -44,13 +45,14 @@ const Page = () => {
           </div>
           
         </div>
-        <div className="flex flex-col md:flex-row justify-center items-center gap-8 mb-16">
-          <div className="w-full md:w-1/2">
+        <div className="flex flex-col md:flex-row justify-center items-center mb-16">
+          <div className="w-full md:w-1/2 mb-10 md:mb-0">
             <HorizontalCard 
               imgUri="/img/rahul-karad.jpeg" 
               title="Dr. Rahul Karad"
               textColor="text-accent-100"
               subtitle="Founder" 
+              imageSpec="cover"
               index={1} 
             />
           </div>
@@ -60,7 +62,7 @@ const Page = () => {
           content= {[
             "At MIT World Peace University, we are committed to fostering the holistic development of our students through innovative education. Beyond academics, we nurture adaptability, problem-solving, and leadership skills, preparing students to excel in an ever-evolving professional landscape.",
             "HACKMITWPU 2025 is a transformative three-day event designed to spark innovation, creativity, and entrepreneurship. This Executive President’s Challenge encourages students to explore cutting-edge solutions in technology, management, science, social sciences, fine arts, sustainable studies, and public health.",
-            "More than just a competition, HACKMITWPU 2025 is a dynamic platform for collaboration and critical thinking. It empowers students to push boundaries, challenge conventions, and develop impactful solutions that drive real-world change. Through teamwork, mentorship, and groundbreaking ideas, we pave the way for a brighter future.",
+            "More than just a competition, HACKMITWPU 2025 is a dynamic platform for collaboration and critical thinking. It empowers students to push boundaries, challenge conventions, and develop impactful solutions that drive real-world change.",
           ]}
           
         />
