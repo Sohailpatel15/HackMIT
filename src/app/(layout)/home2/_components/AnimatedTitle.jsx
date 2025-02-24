@@ -96,7 +96,7 @@ export const AnimatedTitle = ({ title, containerClass }) => {
             if (i === 2) styleClass += " highlight";
 
             return (
-              <span key={i} className={`${styleClass} text-7xl font-bold`}>
+              <span key={i} className={`${styleClass} md:text-7xl text-5xl font-bold`}>
                 {word}&nbsp;
               </span>
             );
