@@ -21,14 +21,15 @@ const Page = () => {
     >
       <div className="z-50 p-4 container mx-auto mt-32">
         {/* Founders & Presidents */}
-        <div className="flex flex-col md:flex-row justify-center items-center gap-8 mb-48">
+        <div className="flex flex-col md:flex-row justify-center items-center mb-48">
           <div className="w-full md:w-1/2">
             <HorizontalCard 
               imgUri="/img/vishwanath-karad.jpg" 
               title="Dr. Vishwanath karad" 
               subtitle="Founder" 
               textColor="text-hack-100"
-              index={1} 
+              imageSpec="contain"
+              index={1}
             />
           </div>
           <div className="w-full md:w-1/2">
@@ -44,13 +45,14 @@ const Page = () => {
           </div>
           
         </div>
-        <div className="flex flex-col md:flex-row justify-center items-center gap-8 mb-16">
+        <div className="flex flex-col md:flex-row justify-center items-center mb-16">
           <div className="w-full md:w-1/2">
             <HorizontalCard 
               imgUri="/img/rahul-karad.jpeg" 
               title="Dr. Rahul Karad"
               textColor="text-accent-100"
               subtitle="Founder" 
+              imageSpec="cover"
               index={1} 
             />
           </div>

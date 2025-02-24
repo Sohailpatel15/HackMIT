@@ -22,12 +22,12 @@ const Card = ({ imgUri, title, subtitle, rotation, variant }) => {
 
 export const HorizontalCard = ({ imgUri, title, subtitle, rotation, isGradient }) => {
     return (
-        <div className={` relative rounded-3xl aspect-[16/10] h-fit overflow-hidden bg-hack-100 rotate-${rotation} ${isGradient && 'bg-gradient-to-r from-hack-100 to-hack-300 group '} `}>
+        <div className={`relative rounded-3xl aspect-[16/10] h-fit overflow-hidden bg-hack-100 ${rotation ? `rotate-${rotation}` : ''} ${isGradient && 'bg-gradient-to-r from-hack-100 to-hack-300 group'}`}>
 
             <img
-                className='rounded-full aspect-square object-cover w-28 h-28 absolute top-4 right-4 group-hover:w-28 group-hover:h-32 transition-all :'
-                src={imgUri || 'https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'} alt="" />
-
+                className='rounded-full aspect-square object-contain w-28 h-28 absolute top-4 right-4 transition-all'
+                src={imgUri || 'https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'} 
+                alt={title || "Profile image"} />
 
             <div className='flex flex-col p-4 absolute bottom-0 left-0'>
                 <div className='p-2 w-fit bg-accent-200/40 rounded-full aspect-square mb-2'>
@@ -39,4 +39,6 @@ export const HorizontalCard = ({ imgUri, title, subtitle, rotation, isGradient }
         </div>
     )
 }
+
+
 export default Card

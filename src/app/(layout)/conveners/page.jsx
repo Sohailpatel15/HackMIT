@@ -9,47 +9,52 @@ const ConvenersData = [
   {
     imgUri: "/img/conveners/ravi-kumar-chitnis.jpg",
     title: "Dr. RM Chitnis",
-    subtitle: "Vice Chancellor at MIT World Peace University",
+    subtitle: "Vice Chancellor, MIT World Peace University",
   },
   {
     imgUri: "/img/conveners/milind-pande.jpg",
     title: "Dr. Milind Pande",
-    subtitle: "Pro Vice Chancellor at MIT World Peace University",
+    subtitle: "Pro Vice Chancellor, MIT World Peace University",
   },
   {
     imgUri: "/img/conveners/sanjay-kamtekar.webp",
     title: "Dr. Sanjay Kamtekar",
-    subtitle: "Chief Academic Officer at MIT World Peace University",
+    subtitle: "Chief Academic Officer, MIT World Peace University",
   },
 ];
 
 const coConvenersData = [
   {
+    imgUri: "/img/conveners/ganesh-pokhale.jpg",
+    title: "Mr. Ganesh Pokhale",
+    subtitle: "Registrar, MIT World Peace University",
+  },
+  {
+    imgUri: "/img/conveners/akshay-malhotra.png",
+    title: "Dr. Akshay Malhotra ",
+    subtitle: "Professor & Dean, Academics",
+  },
+  {
+    imgUri: "/img/conveners/hitesh-joshi.jpeg",
+    title: "Dr. Hitesh Joshi",
+    subtitle: "Director, Student Affairs",
+  },
+  {
     imgUri: "/img/coordinators/krishna-warhade.jpg",
     title: "Dr. Krishna Warhade",
-    subtitle: "Dean, Doctoral Program",
+    subtitle: "Director, Doctoral Program",
   },
   {
     imgUri: "/img/coordinators/kishanprasad-gunale.jpg",
     title: "Dr. Kishanprasad Gunale",
     subtitle:
-      "Assistant Professor, EnTC  ",
-  },
-  {
-    imgUri: "/img/conveners/ganesh-pokhale.jpg",
-    title: "Mr. Ganesh Pokhale",
-    subtitle: "Registrar at MIT World Peace University",
-  },
-  {
-    imgUri: "/img/conveners/hitesh-joshi.jpeg",
-    title: "Dr. Hitesh Joshi",
-    subtitle: "Director - Student Affairs at MIT World Peace University",
+      "Director, CDC  ",
   },
   {
     imgUri: "/img/conveners/mangesh-bedekar.jpg",
     title: "Dr. Mangesh Bedekar",
     subtitle:
-      "Dean, School of Computer Science and Engineering  at MIT World Peace University",
+      "Dean, School of Computer Science and Engineering",
   },
 ];
 
@@ -58,63 +63,153 @@ const DeanData = [
     imgUri: "/img/conveners/siddharth-chakrabarti.jpg",
     title: "Dr. Siddharth Chakrabarti",
     subtitle:
-      "Dean, School of Engineering and Technology at MIT World Peace University",
+      "Dean, School of Engineering and Technology",
   },
   {
     imgUri: "/img/conveners/deependra-sharma.jpg",
     title: "Dr. Deependra Sharma",
-    subtitle: "Dean, School of Business at MIT World Peace University",
+    subtitle: "Dean, School of Business",
   },
   {
     imgUri: "/img/conveners/easwar-krishna-iyer.jpg",
     title: "Dr. Easwar Krishna Iyer",
     subtitle:
-      "Dean, Ramcharan School of Leadership at MIT World Peace University",
+      "Dean, Ramcharan School of Leadership",
   },
   {
     imgUri: "/img/conveners/anup-kale.jpg",
     title: "Dr. Anup Kale",
     subtitle:
-      "Associate Dean, School of Sciences and Environmental Studies at MIT World Peace University",
+      "Associate Dean, School of Sciences and Environmental Studies",
   },
   {
     imgUri: "/img/conveners/neeraj-mahindroo.jpg",
     title: "Dr. Neeraj Mahindroo",
-    subtitle: "Dean, School of Pharmacy at MIT World Peace University",
+    subtitle: "Dean, School of Pharmacy",
   },
   {
     imgUri: "/img/conveners/saurabh-kumar.jpg",
     title: "Dr. Saurabh Kumar",
-    subtitle: "Associate Dean, School of Design at MIT World Peace University",
+    subtitle: "Associate Dean, School of Design",
   },
   {
     imgUri: "/img/conveners/pournima-inamdar.jpg",
     title: "Dr. Pournima Inamdar",
-    subtitle: "Associate Dean, School of Law at MIT World Peace University",
+    subtitle: "Associate Dean, School of Law",
+  },
+  {
+    imgUri: "/img/conveners/anjali-sane.png",
+    title: "Dr. Anjali Sane",
+    subtitle:
+      "Dean, School of School of Economics and Science",
+  },
+  {
+    imgUri: "/img/conveners/vishal-ghule.png",
+    title: "Dr. Vishal Ghule",
+    subtitle: "Dean, School of Liberal Arts",
+  }
+];
+
+const div1 = [
+  {
+    imgUri: "/img/division-coordinators/I/deepali-javale.jpg",
+    title: "Mrs. Deepali Javale",
+    subtitle: "Assistant Professor, Department of Computer Engineering and Technology",
+  },
+  {
+    imgUri: "/img/division-coordinators/I/sharmishta-desai.png",
+    title: "Dr. Sharmishta Desai",
+    subtitle: "Associate Professor, Department of Computer Engineering and Technology",
+  },
+  {
+    imgUri: "/img/division-coordinators/I/sumitra-motade.png",
+    title: "Dr. Sumitra Motade",
+    subtitle: "Assistant Professor,School of Electronics & Communication Engineering",
+  },
+  {
+    imgUri: "/img/division-coordinators/I/parul-jadhav.png",
+    title: "Dr. Parul Jadhav",
+    subtitle: "Program Director, Department of Electricals and Electronics Engineering",
   },
 ];
 
-const facultyData = [
+const div2 = [
   {
-    imgUri: "/img/division-coordinators/deepali-javale.jpg",
-    title: "Mrs. Deepali Javale",
-    subtitle: "Assistant Professor, Computer Science, DIVISION I",
-  },
-  {
-    imgUri: "/img/division-coordinators/vinita-kale.jpg",
+    imgUri: "/img/division-coordinators/II/vinita-kale.png",
     title: "Dr. Vinita Kale",
-    subtitle: "Assistant Professor, Management, DIVISION II",
+    subtitle: "Assistant Professor, Department of Business",
   },
   {
-    imgUri: "/img/division-coordinators/satish-polshettiwar.jpg",
+    imgUri: "/img/division-coordinators/II/danashree-tharkude.png",
+    title: "Dr. Danashree Tharkude",
+    subtitle: "Associate Professor & Associate Dean, External Relations",
+  }
+
+];
+
+const div3 = [
+  {
+    imgUri: "/img/division-coordinators/III/satish.png",
     title: "Dr. Satish Polshettiwar",
-    subtitle: "Assistant Professor, Pharmaceutics, DIVISION III",
+    subtitle: "Assistant Professor & HOD, Pharmaceutics Department",
   },
   {
-    imgUri: "/img/division-coordinators/vatsala-sutar.jpg",
-    title: "Ms. Vatsala Sutar",
-    subtitle: "Assistant Professor, Department of Design, DIVISION IV",
+    imgUri: "/img/division-coordinators/III/rohini-pujari.png",
+    title: "Dr. Rohini Pujari",
+    subtitle: "Assistant Professor, Department of Pharmaceutical Sciences",
   },
+  {
+    imgUri: "/img/division-coordinators/III/veena-sangvikar.png",
+    title: "Dr. Sumitra Motade",
+    subtitle: "Assistant Professor, Department of Mathematics and Statistics",
+  }
+];
+
+const div4 = [
+  {
+    imgUri: "/img/division-coordinators/IV/vatsala-sutar.png",
+    title: "Ms. Vatsala Sutar",
+    subtitle: "Assistant Professor, Department of Design",
+  },
+  {
+    imgUri: "/img/division-coordinators/IV/ganesh-jadhav.png",
+    title: "Dr. Ganesh Jadhav",
+    subtitle: "Assistant Professor, Department of Design",
+  },
+  {
+    imgUri: "/img/division-coordinators/IV/satyawan-gagare.png",
+    title: "Dr. Satyawan Gagare",
+    subtitle: "Senior Executive & Assistant Project Co-ordiantor",
+  }
+];
+
+
+const core = [
+  {
+    imgUri: "/img/core-team/vishal.png",
+    title: "Prof. Vishal Pawar",
+    subtitle: "Assistant Professor",
+  },
+  {
+    imgUri: "/img/core-team/avinash.png",
+    title: "Mr. Avinash Patil",
+    subtitle: "Research Associate",
+  },
+  {
+    imgUri: "/img/core-team/avnish.png",
+    title: "Mr. Avinish Kumar",
+    subtitle: "Program Manager",
+  },
+  {
+    imgUri: "/img/core-team/sangita.png",
+    title: "Mrs.Sangita",
+    subtitle: "Senior Executive",
+  },
+  {
+    imgUri: "/img/core-team/vasanti.png",
+    title: "Ms. Vasanti Bhandwalkar",
+    subtitle: "Executive Assistant",
+  }
 ];
 
 const Page = () => {
@@ -173,7 +268,7 @@ const Page = () => {
           >
             Co-Conveners
           </TextAnimate>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 mb-12 md:mb-16 place-items-center">
+          <div className="flex flex-col items-center lg:flex-row lg:flex-wrap justify-center gap-4 w-full">
             {coConvenersData.map((person, i) => (
               <div key={i} className="w-full max-w-[300px] sm:max-w-[360px]">
                 <Card
@@ -189,11 +284,11 @@ const Page = () => {
           <TextAnimate
             animation="blurInUp"
             by="character"
-            className="text-center text-4xl md:text-5xl font-semibold py-6 md:py-8"
+            className="text-center text-4xl md:text-5xl font-semibold py-8 md:pt-16"
           >
             Deans
           </TextAnimate>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 mb-12 md:mb-16 place-items-center">
+          <div className="flex flex-col items-center lg:flex-row lg:flex-wrap justify-center gap-4 w-full">
             {DeanData.map((person, i) => (
               <div key={i} className="w-full max-w-[300px] sm:max-w-[360px]">
                 <Card
@@ -205,25 +300,118 @@ const Page = () => {
             ))}
           </div>
 
+
+          {/* Division Co-Ordinators */}
+          <TextAnimate
+            animation="blurInUp"
+            by="character"
+            className="text-center text-4xl md:text-5xl font-semibold py-6 md:pt-24"
+          >
+            Division I Co-Ordinators
+          </TextAnimate>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-12 md:mb-16">
+              <div className="col-span-full flex justify-center sm:col-span-2 lg:col-span-4 gap-4">
+                    {div1.map((person, i) => (
+                        <div key={i} className="w-full max-w-[300px] sm:max-w-[360px]">
+                          <Card
+                            imgUri={person.imgUri}
+                            title={person.title}
+                            subtitle={person.subtitle}
+                          />
+                        </div>
+                  ))}
+              </div>
+            
+          </div>
+
           {/* Division Co-Ordinators */}
           <TextAnimate
             animation="blurInUp"
             by="character"
             className="text-center text-4xl md:text-5xl font-semibold py-6 md:py-8"
           >
-            Division Co-Ordinators
+            Division II Co-Ordinators
           </TextAnimate>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-12 md:mb-16 place-items-center">
-            {facultyData.map((person, i) => (
-              <div key={i} className="w-full max-w-[300px] sm:max-w-[360px]">
-                <Card
-                  imgUri={person.imgUri}
-                  title={person.title}
-                  subtitle={person.subtitle}
-                />
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-12 md:mb-16">
+              <div className="col-span-full flex justify-center sm:col-span-2 lg:col-span-4 gap-4">
+                    {div2.map((person, i) => (
+                        <div key={i} className="w-full max-w-[300px] sm:max-w-[360px]">
+                          <Card
+                            imgUri={person.imgUri}
+                            title={person.title}
+                            subtitle={person.subtitle}
+                          />
+                        </div>
+                  ))}
               </div>
-            ))}
+            
           </div>
+
+          {/* Division Co-Ordinators */}
+          <TextAnimate
+            animation="blurInUp"
+            by="character"
+            className="text-center text-4xl md:text-5xl font-semibold py-6 md:py-8"
+          >
+            Division III Co-Ordinators
+          </TextAnimate>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-12 md:mb-16">
+              <div className="col-span-full flex justify-center sm:col-span-2 lg:col-span-4 gap-4">
+                    {div3.map((person, i) => (
+                        <div key={i} className="w-full max-w-[300px] sm:max-w-[360px]">
+                          <Card
+                            imgUri={person.imgUri}
+                            title={person.title}
+                            subtitle={person.subtitle}
+                          />
+                        </div>
+                  ))}
+              </div>
+            
+          </div>
+          {/* Division Co-Ordinators */}
+          <TextAnimate
+            animation="blurInUp"
+            by="character"
+            className="text-center text-4xl md:text-5xl font-semibold py-6 md:py-8"
+          >
+            Division IV Co-Ordinators
+          </TextAnimate>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-12 md:mb-16">
+              <div className="col-span-full flex justify-center sm:col-span-2 lg:col-span-4 gap-4">
+                    {div4.map((person, i) => (
+                        <div key={i} className="w-full max-w-[300px] sm:max-w-[360px]">
+                          <Card
+                            imgUri={person.imgUri}
+                            title={person.title}
+                            subtitle={person.subtitle}
+                          />
+                        </div>
+                  ))}
+              </div>
+            
+          </div>
+
+
+         {/* Division Co-Ordinators */}
+            <TextAnimate
+              animation="blurInUp"
+              by="character"
+              className="text-center text-4xl md:text-5xl font-semibold py-6 md:py-8"
+            >
+              Core Team
+            </TextAnimate>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-12 md:mb-16">
+              {core.map((person, i) => (
+                <div key={i} className="w-full">
+                  <Card
+                    imgUri={person.imgUri}
+                    title={person.title}
+                    subtitle={person.subtitle}
+                  />
+                </div>
+              ))}
+            </div>
         </div>
 
         <DotPattern
