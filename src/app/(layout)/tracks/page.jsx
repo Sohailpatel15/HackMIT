@@ -20,7 +20,7 @@ const Page = () => {
               <TextAnimate
                 animation="blurInUp"
                 by="character"
-                className="font-circular-web !text-7xl text-hack-100"
+                className="font-circular-web text-hack-100 lg:text-7xl text-nowrap text-4xl -mb-24"
               >
                 Tracks
               </TextAnimate>

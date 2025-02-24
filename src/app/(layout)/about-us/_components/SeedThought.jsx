@@ -48,7 +48,7 @@ const AnimatedCard = ({ title, content }) => {
           {content.map((text, index) => (
             <p
               key={index}
-              className={`text-sm md:text-base text-gray-700 leading-relaxed transition-all duration-700
+              className={`text-xs md:text-base text-gray-700 leading-relaxed transition-all duration-700
                 ${isHovered ? 'text-blue-800 md:translate-x-2' : 'translate-x-0'}`}
               style={{
                 transitionDelay: `${index * 100}ms`,
