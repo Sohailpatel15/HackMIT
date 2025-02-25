@@ -13,7 +13,7 @@ const App = () => {
     <main className="relative min-h-screen w-screen overflow-x-hidden">
       <Hero />
       <About />
-      {/* <Features /> */}
+      <Features />
       <Story />
       {/* <Contact /> */}
       <Footer />

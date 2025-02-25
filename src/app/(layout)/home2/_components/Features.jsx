@@ -83,7 +83,7 @@ const Features = () => {
         
         <BentoTilt className="border-hsla relative mb-7 h-96 w-full overflow-hidden rounded-md md:h-[65vh]">
           <BentoCard
-            src="./videos/hackmitVideo1.MOV"
+            src="https://res.cloudinary.com/dapkhqyog/video/upload/v1740469742/x0xv5tqygfbkkvd49uwj.mov"
             title={
               <>
                 Inn<b>o</b>vate
@@ -97,7 +97,7 @@ const Features = () => {
         <div className="flex flex-col gap-7 md:grid md:h-[135vh] md:grid-cols-2 md:grid-rows-3">
           <BentoTilt className="h-80 w-full overflow-hidden rounded-md md:h-full md:row-span-1 md:col-span-1">
             <BentoCard
-              src="./videos/hackmitVideo2.MOV"
+              src="https://res.cloudinary.com/dapkhqyog/video/upload/v1740469742/qd6htwdblskggadb1iip.mov"
               title={
                 <>
                   Coll<b>a</b>borate
@@ -109,7 +109,7 @@ const Features = () => {
           
           <BentoTilt className="h-80 w-full overflow-hidden rounded-md md:h-full md:row-span-1 md:col-span-1">
             <BentoCard
-              src="./videos/hackmitVideo3.MOV"
+              src="https://res.cloudinary.com/dapkhqyog/video/upload/v1740469742/ckocmtlsvohcsaqjui7n.mov"
               title={
                 <>
                   Cod<b>e</b>
@@ -121,7 +121,7 @@ const Features = () => {
           
           <BentoTilt className="h-80 w-full overflow-hidden rounded-md md:h-full md:col-span-1">
             <BentoCard
-              src="./videos/hackmitVideo4.MOV"
+              src="https://res.cloudinary.com/dapkhqyog/video/upload/v1740469742/vboscmfswxafxbcg5v4v.mov"
               title={
                 <>
                   S<b>h</b>owcase
@@ -142,7 +142,7 @@ const Features = () => {
 
           <div className="h-80 w-full overflow-hidden rounded-md md:h-full md:col-span-1">
             <video
-              src="./videos/hackVideo1.mp4"
+              src="https://res.cloudinary.com/dapkhqyog/video/upload/v1740470194/yagb2sznzqwsya66nqcj.mp4"
               loop
               muted
               autoPlay
