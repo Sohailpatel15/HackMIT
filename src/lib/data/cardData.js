@@ -29,7 +29,7 @@ export const cardData = [
     description: "Focuses on building AI-driven solutions using large language models, external APIs, and custom models.",
     header: <Skeleton />,
     className: "h-4 w-4",
-    psUrl: "/tracks/HackAiThon ps.pdf",
+    psUrl: "/tracks/HackAIThon ps.pdf",
     registerUrl: "https://unstop.com/o/zOkoPA5?lb=x8QsB2V&utm_medium=Share&utm_source=shortUrl",
   },
   {
@@ -129,6 +129,36 @@ export const cardData = [
     className: "h-4 w-4",
     registerUrl: "https://unstop.com/o/7VGn3Kp?lb=x8QsB2V&utm_medium=Share&utm_source=shortUrl",
     psUrl: "/tracks/Women entrepreneurship ps.pdf"
+  },
+  {
+    id: 23,
+    title: "Think Biz",
+    src: "/img/tracks/think biz.png",
+    description: "",
+    header: <Skeleton />,
+    className: "h-4 w-4",
+    // psUrl: "/tracks/Biothon ps.pdf",
+    registerUrl: "https://unstop.com/o/W6vNB4J?lb=x8QsB2V&utm_medium=Share&utm_source=shortUrl"
+  },
+  {
+    id: 24,
+    title: "Polytechnic Ideathon",
+    src: "/img/tracks/POLYTECH.png",
+    description: "A cybersecurity challenge testing skills in cryptography, reverse engineering, web exploitation, and more.",
+    header: <Skeleton />,
+    className: "h-4 w-4",
+    registerUrl: "https://unstop.com/o/m573aCG?lb=x8QsB2V&utm_medium=Share&utm_source=shortUrl",
+    psUrl: "/tracks/ideathon ps.pdf",
+  },
+  {
+    id: 25,
+    title: "Polytechnic Workathon",
+    src: "/img/tracks/POLYTECH.png",
+    description: "A cybersecurity challenge testing skills in cryptography, reverse engineering, web exploitation, and more.",
+    header: <Skeleton />,
+    className: "h-4 w-4",
+    registerUrl: "https://unstop.com/o/zG5OlmZ?lb=x8QsB2V&utm_medium=Share&utm_source=shortUrl",
+    psUrl: "/tracks/workathon ps.pdf",
   },
   
 ];

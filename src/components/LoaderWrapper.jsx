@@ -20,7 +20,7 @@ export default function LoaderWrapper({ children }) {
 
       setTimeout(() => {
         setLoading(false);
-      }, 300);
+      }, 100);
     });
     
 

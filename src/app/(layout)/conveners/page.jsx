@@ -21,19 +21,14 @@ const ConvenersData = [
     title: "Dr. Sanjay Kamtekar",
     subtitle: "Chief Academic Officer, MIT World Peace University",
   },
-];
-
-const coConvenersData = [
   {
     imgUri: "/img/conveners/ganesh-pokhale.jpg",
     title: "Mr. Ganesh Pokhale",
     subtitle: "Registrar, MIT World Peace University",
-  },
-  {
-    imgUri: "/img/conveners/akshay-malhotra.png",
-    title: "Dr. Akshay Malhotra ",
-    subtitle: "Professor & Dean, Academics",
-  },
+  }
+];
+
+const coConvenersData = [
   {
     imgUri: "/img/conveners/hitesh-joshi.jpeg",
     title: "Dr. Hitesh Joshi",
@@ -60,6 +55,11 @@ const coConvenersData = [
 
 const DeanData = [
   {
+    imgUri: "/img/conveners/akshay-malhotra.png",
+    title: "Dr. Akshay Malhotra ",
+    subtitle: "Professor & Dean, Academics",
+  },
+  {
     imgUri: "/img/conveners/siddharth-chakrabarti.jpg",
     title: "Dr. Siddharth Chakrabarti",
     subtitle:
@@ -75,27 +75,11 @@ const DeanData = [
     title: "Dr. Easwar Krishna Iyer",
     subtitle:
       "Dean, Ramcharan School of Leadership",
-  },
-  {
-    imgUri: "/img/conveners/anup-kale.jpg",
-    title: "Dr. Anup Kale",
-    subtitle:
-      "Associate Dean, School of Sciences and Environmental Studies",
-  },
+  },  
   {
     imgUri: "/img/conveners/neeraj-mahindroo.jpg",
     title: "Dr. Neeraj Mahindroo",
     subtitle: "Dean, School of Pharmacy",
-  },
-  {
-    imgUri: "/img/conveners/saurabh-kumar.jpg",
-    title: "Dr. Saurabh Kumar",
-    subtitle: "Associate Dean, School of Design",
-  },
-  {
-    imgUri: "/img/conveners/pournima-inamdar.jpg",
-    title: "Dr. Pournima Inamdar",
-    subtitle: "Associate Dean, School of Law",
   },
   {
     imgUri: "/img/conveners/anjali-sane.png",
@@ -107,7 +91,23 @@ const DeanData = [
     imgUri: "/img/conveners/vishal-ghule.png",
     title: "Dr. Vishal Ghule",
     subtitle: "Dean, School of Liberal Arts",
-  }
+  },
+  {
+    imgUri: "/img/conveners/anup-kale.jpg",
+    title: "Dr. Anup Kale",
+    subtitle:
+      "Associate Dean, School of Sciences and Environmental Studies",
+  },
+  {
+    imgUri: "/img/conveners/saurabh-kumar.jpg",
+    title: "Dr. Saurabh Kumar",
+    subtitle: "Associate Dean, School of Design",
+  },
+  {
+    imgUri: "/img/conveners/pournima-inamdar.jpg",
+    title: "Dr. Pournima Inamdar",
+    subtitle: "Associate Dean, School of Law",
+  },
 ];
 
 const div1 = [
@@ -160,7 +160,7 @@ const div3 = [
   },
   {
     imgUri: "/img/division-coordinators/III/veena-sangvikar.png",
-    title: "Dr. Sumitra Motade",
+    title: "Dr. Veena Sangvikar",
     subtitle: "Assistant Professor, Department of Mathematics and Statistics",
   }
 ];
@@ -227,7 +227,7 @@ const Page = () => {
                 <Card
                   imgUri="/img/conveners/milind-pande.jpg"
                   title="Dr. Milind Pande"
-                  subtitle="Pro Vice Chancellor at MIT World Peace University"
+                  subtitle="Pro Vice Chancellor, MIT World Peace University"
                 />
               </div>
             </div>
@@ -256,7 +256,7 @@ const Page = () => {
             by="character"
             className="text-center text-4xl xl:text-5xl font-semibold py-6 md:py-8"
           >
-            Co-Conveners
+            Core Conveners
           </TextAnimate>
           <div className="flex flex-col items-center lg:flex-row lg:flex-wrap justify-center gap-4 w-full">
             {coConvenersData.map((person, i) => (

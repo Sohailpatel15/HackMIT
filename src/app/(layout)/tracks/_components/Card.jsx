@@ -79,21 +79,27 @@ const Card = ({ imgUri, title, subtitle, rotation, variant, index, psUrl, regist
                 "opacity-100 translate-y-0": isOpen
               },
               "md:opacity-0 md:-translate-y-4 md:group-hover:opacity-100 md:group-hover:translate-y-0"
-            )}
-          >
-            <a href={registerUrl || "#"} target="_blank">
-            <button className="px-3 md:px-7 py-1.5 md:py-2.5 text-xs md:text-sm font-semibold text-accent-100 bg-white rounded-full border border-accent-100 hover:bg-accent-100 hover:text-white transition-colors duration-200">
-              Register
-            </button>
-            </a>
-            <a
-              href={psUrl || "#"}
-              target="_blank"
-              >
-              <button className="px-3 md:px-6 py-1.5 md:py-2.5 text-xs md:text-sm font-semibold text-hack-300 bg-white rounded-full border border-hack-100 hover:bg-hack-300 hover:text-white transition-colors duration-200">
-                Problem Statements
-              </button>
-            </a>
+            )}>
+              {registerUrl?(
+                <a href={registerUrl || "#"} target="_blank">
+                <button className="px-3 md:px-7 py-1.5 md:py-2.5 text-xs md:text-sm font-semibold text-accent-100 bg-white rounded-full border border-accent-100 hover:bg-accent-100 hover:text-white transition-colors duration-200">
+                  Register
+                </button>
+                </a>
+              ):(<div></div>)
+              }
+                {psUrl?(
+                    <a
+                    href={psUrl || "#"}
+                    target="_blank"
+                    >
+                    <button className="px-3 md:px-6 py-1.5 md:py-2.5 text-xs md:text-sm font-semibold text-hack-300 bg-white rounded-full border border-hack-100 hover:bg-hack-300 hover:text-white transition-colors duration-200">
+                      Problem Statements
+                    </button>
+                  </a>
+              ):(<div></div>)
+              }
+
           </div>
         </div>
       </div>
