@@ -44,11 +44,11 @@ export const cardData = [
   },
   {
     id: 3,
-    title: "Data Quest",
+    title: "DataQuest",
     src: "/img/tracks/data quest.jpg",
     description: "A two-day hackathon where participants tackle real-world problems using curated datasets.",
     header: <Skeleton />,
-    psUrl: "/tracks/data quest ps.pdf",
+    // psUrl: "/tracks/data quest ps.pdf",
     header: <Skeleton />,
     className: "h-4 w-4",
     registerUrl: "https://unstop.com/o/9vqRJOr?lb=x8QsB2V&utm_medium=Share&utm_source=shortUrl"
