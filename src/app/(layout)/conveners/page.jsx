@@ -5,7 +5,20 @@ import { DotPattern } from "./_components/DotPattern";
 import { TextAnimate } from "./_components/TextAnimate";
 import { VantaBackground } from "../background/_components/VantaBackground";
 
-const ConvenersData = [
+const ChiefPatrons = [
+  {
+    imgUri: "/img/vishwanath-karad.jpg",
+    title: "Rev. Prof. Dr. Vishwanath D. Karad",
+    subtitle: "Founder & Chief Patron, MAEERS' MIT Pune",
+  },
+  {
+    imgUri: "/img/rahul-karad.jpeg",
+    title: "Dr. Rahul V. Karad",
+    subtitle: "Managing Trustee and Executive President, MAEERS' MIT Pune",
+  }
+];
+
+const Patrons = [
   {
     imgUri: "/img/conveners/ravi-kumar-chitnis.jpg",
     title: "Dr. RM Chitnis",
@@ -82,15 +95,15 @@ const DeanData = [
     subtitle: "Dean, School of Pharmacy",
   },
   {
+    imgUri: "/img/conveners/vishal-ghule.png",
+    title: "Dr. Vishal Ghule",
+    subtitle: "Dean, School of Liberal Arts",
+  },
+  {
     imgUri: "/img/conveners/anjali-sane.png",
     title: "Dr. Anjali Sane",
     subtitle:
       "Dean, School of School of Economics and Science",
-  },
-  {
-    imgUri: "/img/conveners/vishal-ghule.png",
-    title: "Dr. Vishal Ghule",
-    subtitle: "Dean, School of Liberal Arts",
   },
   {
     imgUri: "/img/conveners/anup-kale.jpg",
@@ -99,16 +112,103 @@ const DeanData = [
       "Associate Dean, School of Sciences and Environmental Studies",
   },
   {
+    imgUri: "/img/conveners/pournima-inamdar.jpg",
+    title: "Dr. Pournima Inamdar",
+    subtitle: "Associate Dean, School of Law",
+  },
+  {
     imgUri: "/img/conveners/saurabh-kumar.jpg",
     title: "Dr. Saurabh Kumar",
     subtitle: "Associate Dean, School of Design",
   },
   {
-    imgUri: "/img/conveners/pournima-inamdar.jpg",
-    title: "Dr. Pournima Inamdar",
-    subtitle: "Associate Dean, School of Law",
+    imgUri: "/img/nihit-jaiswal.jpeg",
+    title: "Dr. Nihit Jaiswal",
+    subtitle: "Director, CIAP",
   },
 ];
+
+
+const DivisonHackathonConvenors = [
+  {
+    imgUri: "/img/division-coordinators/I/deepali-javale.jpg",
+    title: "Mrs. Deepali Javale",
+    subtitle: "Assistant Professor, Department of Computer Engineering and Technology (DIVISON I)",
+  },
+  {
+    imgUri: "/img/division-coordinators/II/vinita-kale.png",
+    title: "Dr. Vinita Kale",
+    subtitle: "Assistant Professor, Department of Business (DIVISON II)",
+  },
+  {
+    imgUri: "/img/division-coordinators/III/satish.png",
+    title: "Dr. Satish Polshettiwar",
+    subtitle: "Assistant Professor & HOD, Pharmaceutics Department (DIVISON III)",
+  },
+  {
+    imgUri: "/img/division-coordinators/III/deobrat-singh.jpeg",
+    title: "Dr. Deobrat Singh",
+    subtitle: "Assistant Professor, Physics Department (DIVISON III)",
+  },
+  {
+    imgUri: "/img/division-coordinators/IV/vatsala-sutar.png",
+    title: "Ms. Vatsala Sutar",
+    subtitle: "Assistant Professor, Department of Design (DIVISON IV)",
+  }
+];
+
+const MadeInMITWPU = [
+  {
+    imgUri: "/img/madeInMIT/shivprakash.jpeg",
+    title: "Dr. Shivprakash Barve",
+    subtitle: "Assistant Professor, Department of Mechanical Engineering (DIVISON I)",
+  },
+  {
+    imgUri: "/img/madeInMIT/deepak-hujare.jpeg",
+    title: "Dr. Deepak Hujare",
+    subtitle: "Associate Professor & Associate Dean, External Relations (DIVISON I)",
+  }
+];
+
+const TeamConvenors = [
+  {
+    imgUri: "/img/conveners/milind-pande.jpg",
+    title: "Dr. Milind Pande",
+    role: "Chief Convenor",
+    subtitle: "Pro Vice Chancellor, MIT-WPU",
+  },
+  {
+    imgUri: "/img/conveners/mangesh-bedekar.jpg",
+    title: "Dr. Mangesh Bedekar",
+    role: "Convenor",
+    subtitle:
+      "Dean, School of Computer Science and Engineering",
+  },
+  {
+    imgUri: "/img/coordinators/krishna-warhade.jpg",
+    title: "Dr. Krishna Warhade",
+    role: "Convenor",
+    subtitle: "Director, Doctoral Program",
+  },
+  {
+    imgUri: "/img/coordinators/kishanprasad-gunale.jpg",
+    title: "Dr. Kishanprasad Gunale",
+    role: "Convenor",
+    subtitle:
+      "Director, CDC  ",
+  },
+  {
+    imgUri: "/img/conveners/hitesh-joshi.jpeg",
+    title: "Dr. Hitesh Joshi",
+    role: "Convenor",
+    subtitle: "Director, Student Affairs",
+  },
+];
+
+
+
+
+
 
 const div1 = [
   {
@@ -186,6 +286,21 @@ const div4 = [
 
 const core = [
   {
+    imgUri: "/img/core-team/parag.jpeg",
+    title: "Parag Khanvilkar",
+    subtitle: "Senior Manager, Events",
+  },
+  {
+    imgUri: "/img/core-team/aditya.jpeg",
+    title: "Aditya Tandle",
+    subtitle: "Assistant Director, Events",
+  },
+  {
+    imgUri: "/img/core-team/kshitij.jpeg",
+    title: "Kshitij Sangle",
+    subtitle: "Senior Manager, Operations",
+  },
+  {
     imgUri: "/img/core-team/vishal.png",
     title: "Prof. Vishal Pawar",
     subtitle: "Assistant Professor",
@@ -212,29 +327,19 @@ const Page = () => {
     >
       <section className="relative flex w-full justify-center rounded-lg bg-transparent md:shadow-xl mt-16">
         <div className="z-50 p-4 container mx-auto">
-          {/* Conveners */}
+          {/* Chief Patrons */}
           <TextAnimate
             animation="blurInUp"
             by="character"
             className="text-center text-4xl md:text-5xl font-semibold py-6 md:py-8"
           >
-            Conveners
+            Chief Patrons
           </TextAnimate>
           <div className="flex flex-wrap justify-center gap-4 mb-12 md:mb-16">
-            {/* Milind Pande Card */}
-            <div className="w-full flex justify-center mb-4">
-              <div className="w-full max-w-[300px] sm:max-w-[360px]">
-                <Card
-                  imgUri="/img/conveners/milind-pande.jpg"
-                  title="Dr. Milind Pande"
-                  subtitle="Pro Vice Chancellor, MIT World Peace University"
-                />
-              </div>
-            </div>
 
             {/* Other Conveners */}
             <div className="flex flex-col lg:flex-row justify-center gap-4 w-full">
-              {ConvenersData.filter(
+              {ChiefPatrons.filter(
                 (person) => person.title !== "Dr. Milind Pande"
               ).map((person, i) => (
                 <div key={i} className="flex justify-center">
@@ -250,25 +355,34 @@ const Page = () => {
             </div>
           </div>
 
-          {/* Co-Conveners */}
+          {/* Conveners */}
           <TextAnimate
             animation="blurInUp"
             by="character"
-            className="text-center text-4xl xl:text-5xl font-semibold py-6 md:py-8"
+            className="text-center text-4xl md:text-5xl font-semibold py-6 md:py-8"
           >
-            Core Conveners
+            Patrons
           </TextAnimate>
-          <div className="flex flex-col items-center lg:flex-row lg:flex-wrap justify-center gap-4 w-full">
-            {coConvenersData.map((person, i) => (
-              <div key={i} className="w-full max-w-[300px] sm:max-w-[360px]">
-                <Card
-                  imgUri={person.imgUri}
-                  title={person.title}
-                  subtitle={person.subtitle}
-                />
-              </div>
-            ))}
+          <div className="flex flex-wrap justify-center gap-4 mb-12 md:mb-16">
+
+            {/* Other Conveners */}
+            <div className="flex flex-col lg:flex-row justify-center gap-4 w-full">
+              {Patrons.filter(
+                (person) => person.title !== "Dr. Milind Pande"
+              ).map((person, i) => (
+                <div key={i} className="flex justify-center">
+                  <div className="w-full max-w-[300px] sm:max-w-[360px]">
+                    <Card
+                      imgUri={person.imgUri}
+                      title={person.title}
+                      subtitle={person.subtitle}
+                    />
+                  </div>
+                </div>
+              ))}
+            </div>
           </div>
+
 
           {/* Dean */}
           <TextAnimate
@@ -296,10 +410,10 @@ const Page = () => {
             by="character"
             className="text-center text-2xl mt-16 md:text-5xl font-semibold py-8 md:pt-16 "
           >
-            Division Co-ordinators I
+            Divison Hackathon Convenors
           </TextAnimate>
           <div className="flex flex-col items-center lg:flex-row lg:flex-wrap justify-center gap-4 w-full">
-            {div1.map((person, i) => (
+            {DivisonHackathonConvenors.map((person, i) => (
               <div key={i} className="w-full max-w-[300px] sm:max-w-[360px]">
                 <Card
                   imgUri={person.imgUri}
@@ -315,10 +429,10 @@ const Page = () => {
             by="character"
             className="text-center text-2xl mt-16 md:text-5xl font-semibold py-8 md:pt-16"
           >
-            Division Co-ordinators II
+            Made in MIT-WPU Pavilion
           </TextAnimate>
           <div className="flex flex-col items-center lg:flex-row lg:flex-wrap justify-center gap-4 w-full">
-            {div2.map((person, i) => (
+            {MadeInMITWPU.map((person, i) => (
               <div key={i} className="w-full max-w-[300px] sm:max-w-[360px]">
                 <Card
                   imgUri={person.imgUri}
@@ -334,35 +448,16 @@ const Page = () => {
             by="character"
             className="text-center text-2xl mt-16 md:text-5xl font-semibold py-8 md:pt-16"
           >
-            Division Co-ordinators III
+            Team Convenors
           </TextAnimate>
           <div className="flex flex-col items-center lg:flex-row lg:flex-wrap justify-center gap-4 w-full">
-            {div3.map((person, i) => (
+            {TeamConvenors.map((person, i) => (
               <div key={i} className="w-full max-w-[300px] sm:max-w-[360px]">
                 <Card
                   imgUri={person.imgUri}
                   title={person.title}
                   subtitle={person.subtitle}
-                />
-              </div>
-            ))}
-          </div>
-
-
-          <TextAnimate
-            animation="blurInUp"
-            by="character"
-            className="text-center text-2xl mt-16 md:text-5xl font-semibold py-8 md:pt-16"
-          >
-            Division Co-ordinators IV
-          </TextAnimate>
-          <div className="flex flex-col items-center lg:flex-row lg:flex-wrap justify-center gap-4 w-full">
-            {div4.map((person, i) => (
-              <div key={i} className="w-full max-w-[300px] sm:max-w-[360px]">
-                <Card
-                  imgUri={person.imgUri}
-                  title={person.title}
-                  subtitle={person.subtitle}
+                  role={person.role}
                 />
               </div>
             ))}
@@ -386,6 +481,9 @@ const Page = () => {
               </div>
             ))}
           </div>
+
+
+          
 
         </div>
 

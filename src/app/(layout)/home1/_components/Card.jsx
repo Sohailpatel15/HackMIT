@@ -5,7 +5,7 @@ import gsap from "gsap";
 import { LightbulbIcon } from "lucide-react";
 import React, { useEffect, useRef } from "react";
 
-const Card = ({ imgUri, title, subtitle, rotation, variant, index }) => {
+const Card = ({ imgUri, title, subtitle, rotation, variant, index, role }) => {
   const cardRef = useRef(null);
 
   useEffect(() => {
@@ -55,6 +55,9 @@ const Card = ({ imgUri, title, subtitle, rotation, variant, index }) => {
           <h3 className="font-semibold text-2xl mb-2 group-hover:text-[26px] group-hover:my-4 transition-all duration-500">
             {title || "Title goes here"}
           </h3>
+          <h4 className="font-semibold text-lg mb-1 group-hover:text-[26px] group-hover:my-4 transition-all duration-500">
+            {role}
+          </h4>
           <p className="font-medium text-sm">
             {subtitle ||
               "Lorem ipsum, dolor sit amet consectetur adipisicing elit."}

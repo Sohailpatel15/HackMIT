@@ -65,7 +65,7 @@ export const cardData = [
   
   {
     id: 6,
-    title: "Visualathon",
+    title: "Designovation",
     src: "/img/tracks/visualathon.jpg",
     description: "Focused on data visualization and UI/UX design.",
     header: <Skeleton />,
