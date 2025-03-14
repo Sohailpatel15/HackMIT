@@ -161,12 +161,12 @@ const MadeInMITWPU = [
   {
     imgUri: "/img/madeInMIT/shivprakash.jpeg",
     title: "Dr. Shivprakash Barve",
-    subtitle: "Assistant Professor, Department of Mechanical Engineering (DIVISON I)",
+    subtitle: "Professor and Program Director | Department of Mechanical Engineering",
   },
   {
     imgUri: "/img/madeInMIT/deepak-hujare.jpeg",
     title: "Dr. Deepak Hujare",
-    subtitle: "Associate Professor & Associate Dean, External Relations (DIVISON I)",
+    subtitle: "Professor | Department of Mechanical Engineering",
   }
 ];
 
