@@ -5,11 +5,12 @@ import { DotPattern } from "./_components/DotPattern";
 import { TextAnimate } from "./_components/TextAnimate";
 import { VantaBackground } from "../background/_components/VantaBackground";
 
+ 
 const ChiefPatrons = [
   {
     imgUri: "/img/vishwanath-karad.jpg",
     title: "Rev. Prof. Dr. Vishwanath D. Karad",
-    subtitle: "Founder & Chief Patron, MAEERS' MIT Pune",
+    subtitle: "Founder & Chief Patron, MAEERS' MIT Pune, UNESCO Chair holder, President, MIT-WPU, Pune, BHARAT VISHWADHARMI",
   },
   {
     imgUri: "/img/rahul-karad.jpeg",
