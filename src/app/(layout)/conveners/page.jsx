@@ -22,7 +22,7 @@ const ChiefPatrons = [
 const Patrons = [
   {
     imgUri: "/img/conveners/ravi-kumar-chitnis.jpg",
-    title: "Dr. RM Chitnis",
+    title: "Dr. R.M. Chitnis",
     subtitle: "Vice Chancellor, MIT World Peace University",
   },
   {
@@ -37,7 +37,7 @@ const Patrons = [
   },
   {
     imgUri: "/img/conveners/ganesh-pokhale.jpg",
-    title: "Mr. Ganesh Pokhale",
+    title: "Mr. Ganesh Pokale",
     subtitle: "Registrar, MIT World Peace University",
   }
 ];
@@ -86,7 +86,7 @@ const DeanData = [
   },
   {
     imgUri: "/img/conveners/easwar-krishna-iyer.jpg",
-    title: "Dr. Easwar Krishna Iyer",
+    title: "Dr. Easwar Iyer",
     subtitle:
       "Dean, Ramcharan School of Leadership",
   },  
@@ -133,7 +133,7 @@ const DeanData = [
 const DivisonHackathonConvenors = [
   {
     imgUri: "/img/division-coordinators/I/deepali-javale.jpg",
-    title: "Mrs. Deepali Javale",
+    title: "Dr. Deepali Javale",
     subtitle: "Assistant Professor, Department of Computer Engineering and Technology (DIVISON I)",
   },
   {
@@ -293,7 +293,7 @@ const core = [
   },
   {
     imgUri: "/img/core-team/aditya.jpeg",
-    title: "Aditya Tandle",
+    title: "Dr. Aditya Tandle",
     subtitle: "Assistant Director, Events",
   },
   {
@@ -308,7 +308,7 @@ const core = [
   },
   {
     imgUri: "/img/core-team/avinash.png",
-    title: "Mr. Avinash Patil",
+    title: "Dr. Avinash Patil",
     subtitle: "Research Associate",
   },
   {
