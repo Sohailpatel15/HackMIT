@@ -132,9 +132,9 @@ export const cardData = [
   },
   {
     id: 23,
-    title: "Think Biz",
+    title: "Business Analytics",
     src: "/img/tracks/think biz.png",
-    description: "Think-Biz at Hack MIT-WPU'25 challenges entrepreneurs to innovate within set themes, fostering creativity, strategy, and problem-solving.",
+    description: "Business Analytics at Hack MIT-WPU'25 challenges entrepreneurs to innovate within set themes, fostering creativity, strategy, and problem-solving.",
     header: <Skeleton />,
     className: "h-4 w-4",
     // psUrl: "/tracks/Biothon ps.pdf",
