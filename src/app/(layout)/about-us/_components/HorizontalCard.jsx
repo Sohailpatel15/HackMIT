@@ -42,7 +42,7 @@ export const HorizontalCard = ({ imgUri, title, role, index, textColor, imageSpe
       <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-hack-400 to-transparent p-6 transform transition-all duration-300">
         <h3
           className={clsx(
-            "font-bold md:text-4xl text-2xl md:group-hover:text-[26px] transition-all duration-500 mb-2",
+            "font-bold md:text-3xl text-2xl md:group-hover:text-[26px] transition-all duration-500 mb-2",
             textColor
           )}
         >

@@ -25,7 +25,7 @@ const Page = () => {
         <div className="w-full md:w-1/2 mb-10 md:mb-0">
             <HorizontalCard 
               imgUri="/img/vishwanath-karad.jpg" 
-              title="REV. Dr. Vishwanath Karad" 
+              title="VISHWADHARMI REV. Dr. Vishwanath Karad" 
               subtitle="Founder" 
               textColor="text-hack-100"
               imageSpec="contain"
