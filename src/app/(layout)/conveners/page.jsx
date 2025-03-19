@@ -86,7 +86,7 @@ const DeanData = [
   },
   {
     imgUri: "/img/conveners/easwar-krishna-iyer.jpg",
-    title: "Dr. Easwar Iyer",
+    title: "Dr. Eeswar Iyer",
     subtitle:
       "Dean, Ramcharan School of Leadership",
   },  
