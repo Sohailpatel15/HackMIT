@@ -1,6 +1,9 @@
 import { Skeleton } from "@/app/(layout)/ps-bento/_BentoGridDemo";
 import { register } from "module";
 
+
+
+
 export const cardData = [
   {
     id: 1,
@@ -67,7 +70,7 @@ export const cardData = [
     id: 6,
     title: "Designovation",
     src: "/img/tracks/visualathon.jpg",
-    description: "Focused on data visualization and UI/UX design.",
+    description: "Designovation, MIT WPU's premier design hackathon, challenges students to showcase creativity, solve real-world problems, and compete for prestigious prizes.",
     header: <Skeleton />,
     className: "h-4 w-4",
     registerUrl: "https://unstop.com/o/V6A0p3E?lb=x8QsB2V&utm_medium=Share&utm_source=shortUrl"
