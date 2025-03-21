@@ -160,7 +160,7 @@ const DivisonHackathonConvenors = [
 
 const MadeInMITWPU = [
   {
-    imgUri: "/img/madeInMIT/shivprakash.jpeg",
+    imgUri: "/img/madeInMIT/shivprakash1.jpeg",
     title: "Dr. Shivprakash Barve",
     subtitle: "Professor and Program Director | Department of Mechanical Engineering",
   },
@@ -430,7 +430,7 @@ const Page = () => {
             by="character"
             className="text-center text-2xl mt-16 md:text-5xl font-semibold py-8 md:pt-16"
           >
-            Made in MIT-WPU Pavilion
+            Make in MIT-WPU Pavilion
           </TextAnimate>
           <div className="flex flex-col items-center lg:flex-row lg:flex-wrap justify-center gap-4 w-full">
             {MadeInMITWPU.map((person, i) => (

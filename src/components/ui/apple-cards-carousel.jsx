@@ -137,13 +137,16 @@ export const Carousel = ({
 export const Card = ({
   card,
   index,
-  layout = false
+  layout = false,
+  brochure
 }) => {
   const [open, setOpen] = useState(false);
   const containerRef = useRef(null);
+  const [viewBrochure, setViewBrochure] = useState(false)
   const { onCardClose, currentIndex } = useContext(CarouselContext);
 
   useEffect(() => {
+
     function onKeyDown(event) {
       if (event.key === "Escape") {
         handleClose();
@@ -163,6 +166,10 @@ export const Card = ({
   useOutsideClick(containerRef, () => handleClose());
 
   const handleOpen = () => {
+    if(card.brochure){
+
+    }
+
     setOpen(true);
   };
 
@@ -172,8 +179,9 @@ export const Card = ({
   };
 
   return (<>
+  <a href={ card.brochure?"/hack2025broucher.pdf": "#"}>
     <AnimatePresence>
-      {open && (
+      {open && card.brochure != "True" &&(
         <div className="fixed inset-0 h-screen z-50 overflow-auto">
           <motion.div
             initial={{ opacity: 0 }}
@@ -218,6 +226,7 @@ export const Card = ({
           layoutId={layout ? `category-${card.category}` : undefined}
           className="text-white text-sm md:text-base font-medium font-sans text-left">
           {card.category}
+          {card.brochure == "True" ?<a href="/hack2025broucher.pdf"> about us</a>:<a></a>}
         </motion.p>
         <motion.p
           layoutId={layout ? `title-${card.title}` : undefined}
@@ -231,6 +240,7 @@ export const Card = ({
         fill
         className="object-cover absolute z-10 inset-0" />
     </motion.button>
+    </a>
   </>);
 };
 
